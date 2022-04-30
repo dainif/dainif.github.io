@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Back on Xiaojiang Blog</title>
-    <link>http://dainif.github.io/categories/back/</link>
+    <link>https://dainif.github.io/categories/back/</link>
     <description>Recent content in Back on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Feb 2022 09:58:42 +0800</lastBuildDate>
     
-	<atom:link href="http://dainif.github.io/categories/back/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dainif.github.io/categories/back/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>回校啦</title>
-      <link>http://dainif.github.io/post/backschool/</link>
+      <link>https://dainif.github.io/post/backschool/</link>
       <pubDate>Sun, 27 Feb 2022 09:58:42 +0800</pubDate>
       
-      <guid>http://dainif.github.io/post/backschool/</guid>
+      <guid>https://dainif.github.io/post/backschool/</guid>
       <description>&lt;p&gt;&amp;ldquo;你看啊 虽然他绑上了流浪的宿命，但是却有了谁也盗不走的信仰,与爱游千川，我们不妨慢一点。&amp;rdquo;
 收拾一下，随行出发&amp;hellip;..
 &lt;/p&gt;</description>

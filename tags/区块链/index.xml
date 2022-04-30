@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>区块链 on Xiaojiang Blog</title>
-    <link>http://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
+    <link>https://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
     <description>Recent content in 区块链 on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Mar 2022 14:20:04 +0800</lastBuildDate>
     
-	<atom:link href="http://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>学科前沿-区块链</title>
-      <link>http://dainif.github.io/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/</link>
+      <link>https://dainif.github.io/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Fri, 11 Mar 2022 14:20:04 +0800</pubDate>
       
-      <guid>http://dainif.github.io/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://dainif.github.io/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/</guid>
       <description>定义 区块链是一个信息技术领域的术语。 从本质上讲，它是一个共享数据库，存储于其中的数据或信息，具有“不可伪造”“全程留痕”“可以追溯”“公开透</description>
     </item>
     
