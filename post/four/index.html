@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Xiaojiang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://dainif.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://dainif.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="CSS学习" />
+    <meta property="og:title" content="CSS学习" />
+    <meta property="twitter:title" content="CSS学习" />
+    
+
+    
+    <meta name="description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="刘晓疆, liuxiaojiang, liuxiaojiang, , 刘晓疆的网络日志, 刘晓疆的博客, Liuxiaojiang Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>CSS学习-刘晓疆的博客 | LiuxiaojiangBlog</title>
+
+    <link rel="canonical" href="/post/four/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Xiaojiang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/fro">FRO</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tech">Tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/back">back</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/sec-blog/post-bg-coffee.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        <a class="tag" href="/tags/java" title="JAVA">
+                            JAVA
+                        </a>
+                        
+                        <a class="tag" href="/tags/servlet" title="Servlet">
+                            Servlet
+                        </a>
+                        
+                        <a class="tag" href="/tags/xhtml" title="XHTML">
+                            XHTML
+                        </a>
+                        
+                    </div>
+                    <h1>CSS学习</h1>
+                    <h2 class="subheading">HTML&#43;Servlet&#43;XHTML</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;刘晓疆&#34;
+                             
+                            on 
+                            Monday, February 28, 2022
+                            
+                                <span id="/post/four/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("OwCSkn6e5Q4FpsdWndUFpukS-gzGzoHsz", "kggfwY9ukJChe5fLqx8ptChh");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>CSS简介、CSS实例、教程。<br>
+</p>
+
+<h2 id="css-简介">CSS 简介：</h2>
+
+<p>CSS 指层叠样式表 (Cascading Style Sheets)
+样式定义如何显示 HTML 元素
+样式通常存储在样式表中
+把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题
+外部样式表可以极大提高工作效率
+外部样式表通常存储在 CSS 文件中
+多个样式定义可层叠为一个</p>
+
+<h2 id="css-实例">CSS 实例</h2>
+
+<p>一个HTML文档可以显示不同的样式:<a href="https://www.runoob.com/try/demo_source/demo_default.htm">查看css是如何工作的</a></p>
+
+<h2 id="样式">样式</h2>
+
+<p>解决了一个很大的问题
+HTML 标签原本被设计为用于定义文档内容，如下实例：</p>
+
+<pre><code>&lt;h1&gt;这是一个标题&lt;/h1&gt;
+&lt;p&gt;这是一个段落。&lt;/p&gt;
+</code></pre>
+
+<p>样式表定义如何显示 HTML 元素，就像 HTML 中的字体标签和颜色属性所起的作用那样。样式通常保存在外部的 .css 文件中。我们只需要编辑一个简单的 CSS 文档就可以改变所有页面的布局和外观</p>
+
+<h2 id="css-语法">CSS 语法</h2>
+
+<p>CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明:</p>
+
+<p>选择器通常是您需要改变样式的 HTML 元素。</p>
+
+<p>每条声明由一个属性和一个值组成。</p>
+
+<p>属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。</p>
+
+<h2 id="实例">实例</h2>
+
+<p>CSS声明总是以分号(;)结束，声明总以大括号({})括起来:</p>
+
+<pre><code>p {color:red;text-align:center;}
+</code></pre>
+
+<p>为了让CSS可读性更强，你可以每行只描述一个属性:</p>
+
+<pre><code>p
+{
+    color:red;
+    text-align:center;
+}
+</code></pre>
+
+<p><a href="https://www.runoob.com/try/try.php?filename=trycss_syntax1">尝试一下</a></p>
+
+<h2 id="css-注释">CSS 注释</h2>
+
+<p>注释是用来解释你的代码，并且可以随意编辑它，浏览器会忽略它。</p>
+
+<p>CSS注释以 /* 开始, 以 */ 结束</p>
+
+<h2 id="css-id-和-class">CSS Id 和 Class</h2>
+
+<p>id 和 class 选择器
+如果你要在HTML元素中设置CSS样式，你需要在元素中设置&rdquo;id&rdquo; 和 &ldquo;class&rdquo;选择器。</p>
+
+<p>id 选择器
+id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+
+<p>HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 &ldquo;#&rdquo; 来定义。</p>
+
+<p>以下的样式规则应用于元素属性 id=&ldquo;para1&rdquo;:</p>
+
+<pre><code>#para1
+{
+    text-align:center;
+    color:red;
+}
+</code></pre>
+
+<p><a href="https://www.runoob.com/try/try.php?filename=trycss_syntax_id">尝试一下</a></p>
+
+<h2 id="class-选择器">class 选择器</h2>
+
+<p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
+
+<p>class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点&rdquo;.&ldquo;号显示：</p>
+
+<p>在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
+
+<pre><code>.center {text-align:center;}
+</code></pre>
+
+<p><a href="https://www.runoob.com/try/try.php?filename=trycss_syntax_class">尝试一下</a></p>
+
+<p>你也可以指定特定的HTML元素使用class。</p>
+
+<p>类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
+
+<h2 id="css-创建">CSS 创建</h2>
+
+<p>当读到一个样式表时，浏览器会根据它来格式化 HTML 文档。</p>
+
+<p>如何插入样式表
+插入样式表的方法有三种:</p>
+
+<pre><code>外部样式表(External style sheet)
+内部样式表(Internal style sheet)
+内联样式(Inline style)
+</code></pre>
+
+<h2 id="外部样式表">外部样式表</h2>
+
+<p>当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用 link 标签链接到样式表。 link 标签在（文档的）头部：</p>
+
+<pre><code>&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。</p>
+
+<p>外部样式表可以在任何文本编辑器中进行编辑。文件不能包含任何的 html 标签。样式表应该以 .css 扩展名进行保存。下面是一个样式表文件的例子：</p>
+
+<pre><code>hr {color:sienna;}
+p {margin-left:20px;}
+body {background-image:url(&quot;/images/back40.gif&quot;);}
+</code></pre>
+
+<p>不要在属性值与单位之间留有空格（如：&rdquo;margin-left: 20 px&rdquo; ），正确的写法是 &ldquo;margin-left: 20px&rdquo;</p>
+
+<h2 id="内部样式表">内部样式表</h2>
+
+<p>当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用 style 标签在文档头部定义内部样式表，就像这样:</p>
+
+<pre><code>&lt;head&gt;
+&lt;style&gt;
+hr {color:sienna;}
+p {margin-left:20px;}
+body {background-image:url(&quot;images/back40.gif&quot;);}
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+
+<h2 id="内联样式">内联样式</h2>
+
+<p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法，例如当样式仅需要在一个元素上应用一次时。</p>
+
+<p>要使用内联样式，你需要在相关的标签内使用样式（style）属性。Style 属性可以包含任何 CSS 属性。本例展示如何改变段落的颜色和左外边距：</p>
+
+<pre><code>&lt;p style=&quot;color:sienna;margin-left:20px&quot;&gt;这是一个段落。&lt;/p&gt;
+</code></pre>
+
+<h2 id="多重样式">多重样式</h2>
+
+<p>如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。</p>
+
+<p>例如，外部样式表拥有针对 h3 选择器的三个属性：</p>
+
+<p>h3
+{
+    color:red;
+    text-align:left;
+    font-size:8pt;
+}
+而内部样式表拥有针对 h3 选择器的两个属性：</p>
+
+<p>h3
+{
+    text-align:right;
+    font-size:20pt;
+}
+假如拥有内部样式表的这个页面同时与外部样式表链接，那么 h3 得到的样式是：</p>
+
+<pre><code>color:red;
+text-align:right;
+font-size:20pt;
+</code></pre>
+
+<p>即颜色属性将被继承于外部样式表，而文字排列（text-alignment）和字体尺寸（font-size）会被内部样式表中的规则取代。</p>
+
+<h2 id="多重样式优先级">多重样式优先级</h2>
+
+<p>样式表允许以多种方式规定样式信息。样式可以规定在单个的 HTML 元素中，在 HTML 页的头元素中，或在一个外部的 CSS 文件中。甚至可以在同一个 HTML 文档内部引用多个外部样式表。</p>
+
+<p>一般情况下，优先级如下：</p>
+
+<p>（内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style sheet &gt; 浏览器默认样式</p>
+
+<pre><code>&lt;head&gt;
+    &lt;!-- 外部样式 style.css --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;/&gt;
+    &lt;!-- 设置：h3{color:blue;} --&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      /* 内部样式 */
+      h3{color:green;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3&gt;测试！&lt;/h3&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>注意：如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式。</p>
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://dainif.github.io"><img src="/img/favicon.png" />Xiaojiang Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/backschool/" data-toggle="tooltip" data-placement="top" title="回校啦">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/five/" data-toggle="tooltip" data-placement="top" title="MYSQL数据库学习">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+<script src="https://giscus.app/client.js"
+        data-repo="dainif/dainif.github.io"
+        data-repo-id="R_kgDOG1NDEg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOG1NDEs4CBJq7"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="JAVA">
+                            JAVA
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="Java">
+                            Java
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/mysql" title="MYSQL">
+                            MYSQL
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/servlet" title="Servlet">
+                            Servlet
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/xhtml" title="XHTML">
+                            XHTML
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Xiaojiang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:2562782392l@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    <li>
+                        <a target="_blank" href="/img/liuxiaojiang.jpg">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/dainif">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Xiaojiang Blog 2022
+                    <br>
+                    <a href="https://github.com/dainif/dainif.github.io">CleanWhite Hugo Blog</a> by <a href="https://dainif.github.io/">Xiaojiang</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=dainif&repo=dainif.github.io&type=star&count=true" >
+                    </iframe> 
+                    <br>
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                    &nbsp;|&nbsp;
+                    <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+                </br><script>
+                    function siteTime() {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = 2022;
+                        var startMonth = 2;
+                        var startDate = 8;
+                        var startHour = 8;
+                        var startMinute = 00;
+                        var startSecond = 00;
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                            minutes);
+                        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                            diffMinutes * minutes) / seconds);
+                        if (startYear == todayYear) {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffDays + " 天 " + diffHours +
+                                " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        } else {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffYears + " 年 " + diffDays +
+                                " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        }
+                    }
+                    setInterval(siteTime, 1000);
+                </script>
+                    <span id="sitetime">载入运行时间...</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

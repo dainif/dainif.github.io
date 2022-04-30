@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Servlet on Xiaojiang Blog</title>
+    <link>https://dainif.github.io/tags/servlet/</link>
+    <description>Recent content in Servlet on Xiaojiang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Feb 2022 16:47:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://dainif.github.io/tags/servlet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS学习</title>
+      <link>https://dainif.github.io/post/four/</link>
+      <pubDate>Mon, 28 Feb 2022 16:47:45 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/four/</guid>
+      <description>&lt;p&gt;CSS简介、CSS实例、教程。&lt;br&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web学习笔记</title>
+      <link>https://dainif.github.io/post/second/</link>
+      <pubDate>Tue, 15 Feb 2022 19:18:57 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/second/</guid>
+      <description>&lt;p&gt;HTML
+关于html的一些基础知识
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

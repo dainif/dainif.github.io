@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Xiaojiang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://dainif.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://dainif.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="学科前沿-纳米网络" />
+    <meta property="og:title" content="学科前沿-纳米网络" />
+    <meta property="twitter:title" content="学科前沿-纳米网络" />
+    
+
+    
+    <meta name="description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="刘晓疆, liuxiaojiang, liuxiaojiang, , 刘晓疆的网络日志, 刘晓疆的博客, Liuxiaojiang Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>学科前沿-纳米网络-刘晓疆的博客 | LiuxiaojiangBlog</title>
+
+    <link rel="canonical" href="/post/nanomemori/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Xiaojiang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/fro">FRO</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tech">Tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/back">back</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/seven-blog/seven-blog-bg.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E7%BA%B3%E7%B1%B3%E7%BD%91%E7%BB%9C" title="纳米网络">
+                            纳米网络
+                        </a>
+                        
+                    </div>
+                    <h1>学科前沿-纳米网络</h1>
+                    <h2 class="subheading">对上课知识的一些总结和课外知识汇总</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;刘晓疆&#34;
+                             
+                            on 
+                            Saturday, March 5, 2022
+                            
+                                <span id="/post/nanomemori/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("OwCSkn6e5Q4FpsdWndUFpukS-gzGzoHsz", "kggfwY9ukJChe5fLqx8ptChh");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+
+<h2 id="纳米网络">纳米网络</h2>
+
+<p>纳米网络或纳米级网络，计算，数据存储，传感器仅能执行简单的任务，例如，操作纳米机器（数百的纳米从数微米是一组互连的设备。纳米网络有望通过允许信息的复杂性和操作范围进行协调，共享和融合来扩展单个纳米机器的功能。纳米网络，医学研究区和环境的研究和军事的技术，工业和消费品应用纳米技术，以实现新的应用。</p>
+
+<h2 id="通讯方式">通讯方式</h2>
+
+<p>经典的交流方法不能直接应用于纳米尺度。纳米级的通信基于电磁通信或分子通信。</p>
+
+<h3 id="电磁通讯">电磁通讯</h3>
+
+<p>纳米级电磁通信，新的纳米材料被定义为传输和从制造部件的电磁辐射的接收。碳材料和分子电子技术的进步，所述纳米电池 ，纳米级的能量采集系统，Nanomemori的纳米级的逻辑电路和纳米天线 ，如开辟了新一代的纳米级电子元器件。从通信的角度看，纳米材料中发现的独特属性决定了电磁辐射的带宽，辐射的时间滞后以及给定输入能量下辐射功率的大小。</p>
+
+<p>目前，设想了纳米电磁通信的两个主要替代方案。一个Nanorajio，所述机电谐振碳纳米管通过接收振幅调制和频率调制波的电磁波解调，以便能够，已经实验证实。另一个是石墨烯根据纳米天线，太赫兹频带进行了分析作为电磁辐射</p>
+
+<h3 id="分子通讯">分子通讯</h3>
+
+<p>分子通信通过与分子受体定义的信息发送。基于分子传播的类型，分子通信技术可以分为基于人行道，基于流量和扩散。</p>
+
+<p>在基于人行道的分子交流中，分子使用诸如分子马达等载体材料通过预定路径传播。这种类型的分子通信，趋化性的大肠杆菌也可以使用。</p>
+
+<p>在基于流动的分子通讯中，分子通过在流体介质中的扩散而传播，在流体介质中，流动和湍流被诱导并可以预测。通过人体内部血液的激素交流就是这种传播的一个例子。通过使用平均沿着特定路径移动的载体材料，即使它是随机的，也可以实现基于流的传播。信息素长距离分子通信是通过这种情况下的一个好例子。</p>
+
+<p>在基于扩散的分子通讯中，分子通过在流体介质中的自发扩散而传播。在这种情况下，仅遵循扩散定律，分子可能会遭受流体介质中存在的不可预测的湍流。当信息素释放到空气或水等流体介质中时，信息素通讯是基于扩散的分子通讯。这种类型的传输中的其他例子中，细胞之间的钙信号细菌之间，群体感应。</p>
+
+<p>基于理想（自由）扩散的宏观理论，单播分子通信通道的脉冲响应是基于理想扩散的分子通信通道的脉冲响应具有时间扩散。这样的时间扩散严重影响了系统的性能。在接收纳米机中产生符号间干扰（ISI）很重要。提出了两种检测方法，基于采样的检测（SD）和基于能量的检测（ED），以检测浓度编码的分子信号。SD方法基于在符号持续时间内在适当的时间仅采集的一个样品的浓度幅度，而ED方法则基于整个符号周期内接收到的分子的累计总数。为了减少ISI的影响，已经分析了基于受控脉冲宽度的分子通信方案。提出的工作表明，可以基于理想扩散实现多级幅度调制。基于脉冲的和基于正弦波的二元浓度编码的分子通信系统的综合研究也在进行中。</p>
+
+<h2 id="发展趋势">发展趋势</h2>
+
+<p>纳米网络将成为医疗科技重要趋势</p>
+
+<p>人类对抗癌症的手段将迎来全新的发展阶段，最近，科学家们正在致力于将纳米材料和通信与传感技术应用到癌症的微创治疗技术当中。植入人体的纳米传感器能够对癌细胞进行识别和定位，进而将诊断信息通过纳米网络及时发送给医护人员，实现对疾病的早期诊断和预防;通过纳米网络也能控制植入人体内的智能药物容器，实现定时靶向性药物释放，从而提高治疗效率。</p>
+
+<p>英国工程技术学会(IET)会士、南方科技大学电子与电气工程系主任陈意钒教授介绍说，纳米网络指纳米尺度的设备(如纳米生物传感器和执行器)之间通过信息共享而组成的短距离、小尺度通信网络，以协助纳米设备在较大的空间范围上完成较复杂的任务。他带领研究团队提出了基于可溶性电子器件、趋磁细菌等的生物可降解的纳米机器人，并以其为载体运送信息分子，实现纳米网络中的信息交互，同时对信息传输过程进行实时全程跟踪和智能控制。</p>
+
+<p>这些纳米尺度的设备可以通过血液注入或者人体植入的方式，在人体单个器官或者全身分布数个甚至成千上万个节点，就像一个作战部队，形成一个可存储、计算及传送信息能力的通信网络，完成生理病理信息监测、药物和造影剂输送等，同时与外部监控设备以及无线通信网络相连接，协助移动医疗和相关大数据处理等。信息载体的生物可降解性，信息传输过程的可视化和远程可控性对纳米网络技术发展具有突破性的意义。</p>
+
+<p>未来10到20年里，纳米网络的发展是医疗科技一个重要的趋势。“它可以与传统的通信网络接口，用于海量的数据搜集与分析，最终奠定分布式诊断、前瞻性保健以及智联化治疗这三大未来医疗应用的基础。同时，纳米网络在将来必须要和大数据、物联网、可穿戴设备、移动医疗等结合，才能形成一个有效的整体解决方案。</p>
+
+<h3 id="期刊发现">期刊发现</h3>
+
+<p>电磁纳米网络通信模型及跨层MAC与路由协议研究</p>
+
+<p>电磁纳米网络由大量的尺寸在几百纳米到几十微米的纳米节点组成,通过太赫兹（Terahertz,THz）频段（0.1-10 THz）进行节点间的通信,具有传统宏观无线传感器网络所不具备的潜能,在军事、环境和生物等领域具有非常重要的应用前景。然而,由于纳米节点的物理约束以及所采用太赫兹频段的特性,导致现有的无线网络技术无法适用于电磁纳米网络中。</p>
+
+<p>针对纳米网络中能量捕获和资源短缺的节点硬件特性、高节点密度的网络特性、以及高路径衰减的太赫兹信道特性,研究电磁纳米网络的通信模型和跨层通信传输协议。提出的通信模型和方法既可以完善纳米网络的底层理论研究,又注重上层协议设计,将为纳米网络的实际应用奠定基础,具有重要的理论意义和应用价值。基于现有的纳米网络中太赫兹信道衰减模型的基础之上,</p>
+
+<p>1)构建高节点密度下太赫兹频段多径干扰和覆盖模型;
+2)面向集中式和分布式网络拓扑结构,基于时间扩散的开关键控调制（Time Spread On-Off Keys,TS-OOK）方式,研究基于时序接收驱动的纳米网络媒体访问控制（Medium Access Control,MAC）层通信方法;
+3)结合人工智能算法,研究可以通过节点状态更新路由表的偏转路由算法;
+4)对能量捕获下纳米网络的可达吞吐量进行建模,为纳米网络的设计提供理论基础。</p>
+
+<p>纳米网络中机会路由算法设计与分析
+分子通信是纳米网络的主要通信方式之一,是一种基于生物启发机制,以生物化学分子作为信息载体进行信息分子传输的短距离通信技术。
+分子通信在生物工程、工业生产、健康医疗、环境监测与保护及信息与通信技术等领域有着广泛的应用,并成为近年来国内外学术界研究的新热点。
+首先,本文概述了分子通信的相关理论知识,对分子通信的基本概念、组成部分、通信过程、特性和应用等进行介绍,并将分子通信与传统的无线通信进行比较,对比得出两者之间的不同特点。
+对传统网络中机会路由和地理机会路由算法的基本思想进行阐述,并介绍地理机会路由的优缺点。对群体感应机制进行深入分析,并探讨了群体感应机制应用于分子通信的可行性。其次,为了提高分子通信的传输速率,本文基于机会路由的思想并根据地理机会路由的特性,并将其应用于纳米网络中,建立了纳米网络中基于自由扩散的地理机会路由算法,并利用MATLAB进行实验仿真。</p>
+
+<p>期刊来源-知网</p>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://dainif.github.io"><img src="/img/favicon.png" />Xiaojiang Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/a-small-program/" data-toggle="tooltip" data-placement="top" title="图书管理系统">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/" data-toggle="tooltip" data-placement="top" title="学科前沿-区块链">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+<script src="https://giscus.app/client.js"
+        data-repo="dainif/dainif.github.io"
+        data-repo-id="R_kgDOG1NDEg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOG1NDEs4CBJq7"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="JAVA">
+                            JAVA
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="Java">
+                            Java
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/mysql" title="MYSQL">
+                            MYSQL
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/servlet" title="Servlet">
+                            Servlet
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/xhtml" title="XHTML">
+                            XHTML
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Xiaojiang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:2562782392l@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    <li>
+                        <a target="_blank" href="/img/liuxiaojiang.jpg">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/dainif">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Xiaojiang Blog 2022
+                    <br>
+                    <a href="https://github.com/dainif/dainif.github.io">CleanWhite Hugo Blog</a> by <a href="https://dainif.github.io/">Xiaojiang</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=dainif&repo=dainif.github.io&type=star&count=true" >
+                    </iframe> 
+                    <br>
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                    &nbsp;|&nbsp;
+                    <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+                </br><script>
+                    function siteTime() {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = 2022;
+                        var startMonth = 2;
+                        var startDate = 8;
+                        var startHour = 8;
+                        var startMinute = 00;
+                        var startSecond = 00;
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                            minutes);
+                        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                            diffMinutes * minutes) / seconds);
+                        if (startYear == todayYear) {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffDays + " 天 " + diffHours +
+                                " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        } else {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffYears + " 年 " + diffDays +
+                                " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        }
+                    }
+                    setInterval(siteTime, 1000);
+                </script>
+                    <span id="sitetime">载入运行时间...</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

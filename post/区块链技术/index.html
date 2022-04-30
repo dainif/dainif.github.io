@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Xiaojiang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://dainif.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://dainif.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="学科前沿-区块链" />
+    <meta property="og:title" content="学科前沿-区块链" />
+    <meta property="twitter:title" content="学科前沿-区块链" />
+    
+
+    
+    <meta name="description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。">
+    <meta property="og:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    <meta property="twitter:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="刘晓疆, liuxiaojiang, liuxiaojiang, , 刘晓疆的网络日志, 刘晓疆的博客, Liuxiaojiang Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>学科前沿-区块链-刘晓疆的博客 | LiuxiaojiangBlog</title>
+
+    <link rel="canonical" href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Xiaojiang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/fro">FRO</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tech">Tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/back">back</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/eight-blog/eight-blog-bg.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE" title="区块链">
+                            区块链
+                        </a>
+                        
+                    </div>
+                    <h1>学科前沿-区块链</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;刘晓疆&#34;
+                             
+                            on 
+                            Friday, March 11, 2022
+                            
+                                <span id="/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("OwCSkn6e5Q4FpsdWndUFpukS-gzGzoHsz", "kggfwY9ukJChe5fLqx8ptChh");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+
+<h2 id="定义">定义</h2>
+
+<p>区块链是一个信息技术领域的术语。
+从本质上讲，它是一个共享数据库，存储于其中的数据或信息，具有“不可伪造”“全程留痕”“可以追溯”“公开透明”“集体维护”等特征。基于这些特征，区块链技术奠定了坚实的“信任”基础，创造了可靠的“合作”机制，具有广阔的运用前景。</p>
+
+<p>狭义区块链是按照时间顺序，将数据区块以顺序相连的方式组合成的链式数据结构，并以密码学方式保证的不可篡改和不可伪造的分布式账本。广义区块链技术是利用块链式数据结构验证与存储数据，利用分布式节点共识算法生成和更新数据，利用密码学的方式保证数据传输和访问的安全、利用由自动化脚本代码组成的智能合约，编程和操作数据的全新的分布式基础架构与计算范式。</p>
+
+<h2 id="起源">起源</h2>
+
+<p>区块链起源于比特币，2008年11月1日，一位自称中本聪(Satoshi Nakamoto)的人发表了《比特币:一种点对点的电子现金系统》一文   ，阐述了基于P2P网络技术、加密技术、时间戳技术、区块链技术等的电子现金系统的构架理念，这标志着比特币的诞生。两个月后理论步入实践，2009年1月3日第一个序号为0的创世区块诞生。几天后2009年1月9日出现序号为1的区块，并与序号为0的创世区块相连接形成了链，标志着区块链的诞生   。
+近年来，世界对比特币的态度起起落落，但作为比特币底层技术之一的区块链技术日益受到重视。在比特币形成过程中，区块是一个一个的存储单元，记录了一定时间内各个区块节点全部的交流信息。各个区块之间通过随机散列(也称哈希算法)实现链接，后一个区块包含前一个区块的哈希值，随着信息交流的扩大，一个区块与一个区块相继接续，形成的结果就叫区块链</p>
+
+<h2 id="发展历程">发展历程</h2>
+
+<p>2008年由中本聪第一次提出了区块链的概念 ，在随后的几年中，区块链成为了电子货币比特币的核心组成部分：作为所有交易的公共账簿。通过利用点对点网络和分布式时间戳服务器，区块链数据库能够进行自主管理。为比特币而发明的区块链使它成为第一个解决重复消费问题的数字货币。比特币的设计已经成为其他应用程序的灵感来源。
+2014年，&rdquo;区块链2.0”成为一个关于去中心化区块链数据库的术语。对这个第二代可编程区块链，经济学家们认为它是一种编程语言，可以允许用户写出更精密和智能的协议。因此，当利润达到一定程度的时候，就能够从完成的货运订单或者共享证书的分红中获得收益。区块链2.0技术跳过了交易和“价值交换中担任金钱和信息仲裁的中介机构”。它们被用来使人们远离全球化经济，使隐私得到保护，使人们“将掌握的信息兑换成货币”，并且有能力保证知识产权的所有者得到收益。第二代区块链技术使存储个人的“永久数字ID和形象”成为可能，并且对“潜在的社会财富分配”不平等提供解决方案 。
+2016年1月20日，中国人民银行数字货币研讨会宣布对数字货币研究取得阶段性成果。会议肯定了数字货币在降低传统货币发行等方面的价值，并表示央行在探索发行数字货币。中国人民银行数字货币研讨会的表达大大增强了数字货币行业信心。这是继2013年12月5日央行五部委发布关于防范比特币风险的通知之后，第一次对数字货币表示明确的态度。<br />
+2016年12月20日，数字货币联盟——中国FinTech数字货币联盟及FinTech研究院正式筹建  。
+如今，比特币仍是数字货币的绝对主流，数字货币呈现了百花齐放的状态，常见的有bitcoin、litecoin、dogecoin、dashcoin，除了货币的应用之外，还有各种衍生应用，如以太坊Ethereum、Asch等底层应用开发平台以及NXT，SIA，比特股，MaidSafe，Ripple等行业应用 。</p>
+
+<h2 id="类型">类型</h2>
+
+<p>（1）公有区块链：公有区块链（Public Block Chains)是指：世界上任何个体或者团体都可以发送交易，且交易能够获得该区块链的有效确认，任何人都可以参与其共识过程。公有区块链是最早的区块链，也是应用最广泛的区块链，各大bitcoins系列的虚拟数字货币均基于公有区块链，世界上有且仅有一条该币种对应的区块链  。
+（2）联合（行业）区块链：行业区块链（Consortium Block Chains)：由某个群体内部指定多个预选的节点为记账人，每个块的生成由所有的预选节点共同决定（预选节点参与共识过程），其他接入节点可以参与交易，但不过问记账过程(本质上还是托管记账，只是变成分布式记账，预选节点的多少，如何决定每个块的记账者成为该区块链的主要风险点），其他任何人可以通过该区块链开放的API进行限定查询   。
+（3）私有区块链：私有区块链（Private Block Chains)：仅仅使用区块链的总账技术进行记账，可以是一个公司，也可以是个人，独享该区块链的写入权限，本链与其他的分布式存储方案没有太大区别。传统金融都是想实验尝试私有区块链，而公链的应用例如bitcoin已经工业化，私链的应用产品还在摸索当中  。</p>
+
+<h2 id="特征">特征</h2>
+
+<p>（1）去中心化。区块链技术不依赖额外的第三方管理机构或硬件设施，没有中心管制，除了自成一体的区块链本身，通过分布式核算和存储，各个节点实现了信息自我验证、传递和管理。去中心化是区块链最突出最本质的特征 。
+（2）开放性。区块链技术基础是开源的，除了交易各方的私有信息被加密外，区块链的数据对所有人开放，任何人都可以通过公开的接口查询区块链数据和开发相关应用，因此整个系统信息高度透明。
+（3）独立性。基于协商一致的规范和协议(类似比特币采用的哈希算法等各种数学算法)，整个区块链系统不依赖其他第三方，所有节点能够在系统内自动安全地验证、交换数据，不需要任何人为的干预。
+（4）安全性。只要不能掌控全部数据节点的51%，就无法肆意操控修改网络数据，这使区块链本身变得相对安全，避免了主观人为的数据变更。
+（5）匿名性。除非有法律规范要求，单从技术上来讲，各区块节点的身份信息不需要公开或验证，信息传递可以匿名进行 。</p>
+
+<h2 id="架构模型">架构模型</h2>
+
+<p>数据层封装了底层数据区块以及相关的数据加密和时间戳等基础数据和基本算法；</p>
+
+<p>网络层则包括分布式组网机制、数据传播机制和数据验证机制等；</p>
+
+<p>共识层主要封装网络节点的各类共识算法；</p>
+
+<p>激励层将经济因素集成到区块链技术体系中来，主要包括经济激励的发行机制和分配机制等；</p>
+
+<p>合约层主要封装各类脚本、算法和智能合约，是区块链可编程特性的基础；</p>
+
+<p>应用层则封装了区块链的各种应用场景和案例。该模型中，基于时间戳的链式区块结构、分布式节点的共识机制、基于共识算力的经济激励和灵活可编程的智能合约是区块链技术最具代表性的创新点  。</p>
+
+<h2 id="核心技术">核心技术</h2>
+
+<p>分布式账本：分布式账本指的是交易记账由分布在不同地方的多个节点共同完成，而且每一个节点记录的是完整的账目，因此它们都可以参与监督交易合法性，同时也可以共同为其作证 。
+非对称加密：存储在区块链上的交易信息是公开的，但是账户身份信息是高度加密的，只有在数据拥有者授权的情况下才能访问到，从而保证了数据的安全和个人的隐私 。
+共识机制：共识机制就是所有记账节点之间怎么达成共识，去认定一个记录的有效性，这既是认定的手段，也是防止篡改的手段。区块链提出了四种不同的共识机制，适用于不同的应用场景，在效率和安全性之间取得平衡 。区块链的共识机制具备“少数服从多数”以及“人人平等”的特点,
+智能合约:智能合约是基于这些可信的不可篡改的数据，可以自动化的执行一些预先定义好的规则和条款。</p>
+
+<h2 id="应用">应用</h2>
+
+<p>（3）公共服务领域：区块链在公共管理、能源、交通等领域都与民众的生产生活息息相关，但是这些领域的中心化特质也带来了一些问题，可以用区块链来改造。区块链提供的去中心化的完全分布式DNS服务，通过网络中各个节点之间的点对点数据传输服务就能实现域名的查询和解析，可用于确保某个重要的基础设施的操作系统和固件没有被篡改，可以监控软件的状态和完整性，发现不良的篡改，并确保使用了物联网技术的系统所传输的数据没用经过篡改。
+（4）数字版权领域：通过区块链技术，可以对作品进行鉴权，证明文字、视频、音频等作品的存在，保证权属的真实、唯一性。作品在区块链上被确权后，后续交易都会进行实时记录，实现数字版权全生命周期管理，也可作为司法取证中的技术性保障。例如，美国纽约一家创业公司Mine Labs开发了一个基于区块链的元数据协议，这个名为Mediachain的系统利用IPFS文件系统，实现数字作品版权保护，主要是面向数字图片的版权保护应用 。</p>
+
+<h2 id="面临的挑战">面临的挑战</h2>
+
+<p>从实践进展来看，区块链技术在商业银行的应用大部分仍在构想和测试之中，距离在生活、生产中的运用还有很长的路，而要获得监管部门和市场的认可也面临不少困难，主要有:
+(一)受到现行观念、制度、法律制约。区块链去中心化、自我管理、集体维护的特性颠覆了人们生产生活方式，淡化了国家、监管概念，冲击了现行法律安排。对于这些，整个世界完全缺少理论准备和制度探讨。即使是区块链应用最成熟的比特币，不同国家持有态度也不相同，不可避免阻碍了区块链技术的应用与发展。解决这类问题，显然还有很长的路要走  。
+(二)在技术层面，区块链尚需突破性进展。区块链应用尚在实验室初创开发阶段，没有直观可用的成熟产品。比之于互联网技术，人们可以用浏览器、APP等具体应用程序，实现信息的浏览、传递、交换和应用，但区块链明显缺乏这类突破性的应用程序，面临高技术门槛障碍。再比如，区块容量问题，由于区块链需要承载复制之前产生的全部信息，下一个区块信息量要大于之前区块信息量，这样传递下去，区块写入信息会无限增大，带来的信息存储、验证、容量问题有待解决 。
+(三)竞争性技术挑战。虽然有很多人看好区块链技术，但也要看到推动人类发展的技术有很多种，哪种技术更方便更高效，人们就会应用该技术。比如，如果在通信领域应用区块链技术，通过发信息的方式是每次发给全网的所有人，但是只有那个有私钥的人才能解密打开信件，这样信息传递的安全性会大大增加。同样，量子技术也可以做到，量子通信——利用量子纠缠效应进行信息传递——同样具有高效安全的特点，近年来更是取得了不小的进展，这对于区块链技术来说，就具有很强的竞争优势。</p>
+
+<h2 id="期刊论文">期刊论文</h2>
+
+<p>浅析区块链技术在网络安全中的作用 -陈明达</p>
+
+<p>目前网络安全方面的风险类型主要有病毒传播风险、漏洞攻击风险、信息入侵风险和黑客风险。由于区块链技术具有去中心化、不可篡改性、可追溯性、去信任化以及智能合约的特性,因此在网络安全应用当中具有技术优势。区块链技术能够增强网络数据的储存和共享能力,提升保密性和网络数据的完整性,能够保障用户私人信息的安全,并对资产和网络交易进行智能化安全管理,从而从多角度全面地守护用户的网络使用安全。</p>
+
+<p>1 网络安全存在的主要风险
+网络安全既包括结构系统方面的安全，也包括操作安全和软硬件的应用安全，网络安全系统具有脆弱性，如果缺少有效的防护，就容易被他人盗取信息甚至是影响到资金安全。部分局域网内主体安全访问级别设置过低，某些计算机软件程序设置不完善，网络系统存在漏洞等，都容易给病毒传播带来可乘之机。目前网络安全方面的主要风险类型有病毒传播风险、漏洞攻击风险、信息入侵风险、黑客风险，应当采取相应的措施予以应对。</p>
+
+<p>2 区块链在网络安全方面的技术优势
+2.1 去中心化
+在新时期，为了完善网络安全管理，区块链技术的使用已经是大势所趋。区块链系统采用分区式数据管理结构，并进行细化的合约机制运行，从而完成系统内节点的可独立交互，从而使得用户在不需要中介参与的机制下独立完成数据的存储与维护，具有去中心化的特点，能够有效防止意外事件、系统入侵等安全因素所导致的信息丢失、信息泄露等问题。</p>
+
+<p>2.2 不可篡改性
+区块链用户在相关节点上获取和存储的数据都是独一无二的，并且需要经过系统的认证，用特定的密钥才能打开，因此也就避免了其他用户对数据进行篡改。另一方面，区块链中的区块头所具有的哈希值，具有颠覆性属性，若用户在区块链中的信息不慎被他人修改，系统将会对相关区块的哈希值进行整体性变更，从而导致此区块之后的信息完全失效直到还原为先前的数据，从而保证了区块链不可篡改性。</p>
+
+<p>2.3 可追溯性
+区块链技术当中的时间戳技术，能够将计算机系统记录的信息按照时间和门类排布成链状结构，并结合相应的算法来保证数据的可溯源性，在写入数据溯源节点的过程中可以查看和保存所有的信息与交易，从而有效地保证网络系统数据信息的追溯性和完整性，并为找到指向数据的目的与运用数据的最终形态做好充分的准备，一方面更好地安全运用数据，另一方面在数据的下载、观看和传输过程中都保证不受外界不安全因素的干扰。</p>
+
+<p>2.4 去信任化与智能合约
+区块链系统具有非对称式系统加密技术，在数据交互的过程当中无需额外判断是否需要产生信任以及信任的程度，不同节点之间的数据安全交换可以不用刻意防止对于中心背书信任程度的依赖性。并且，区块链技术由于其自身代码的特殊性、防破译性，而拥有了自动化、智能化进行安全防护的特性，能够将运行流程以及触发规则进行合约式智能执行并监督，从而有效地在网络安全领域提供数据化支撑。</p>
+
+<p>3 区块链技术对于网络安全的作用
+3.1 增强网络数据的储存和共享能力
+区块链技术基于共识体系与资源共享体系技术对于网络数据的储存进行了初次加密和二次加密，每一次加密都能够充分地保障用户的上网安全与信息储存安全，在初次加密时，区块链运用了区块网络密钥，将只有用户本人知道的密钥通过区块转换锁定的模式作为防护区，避免了电脑防火墙保障不力而产生的问题，这一层次已经足以应对绝大部分信息安全问题。第二层加密手段则是区块链利用其去中心化特征而产生的即时保障区，让保障区内的重要内容进行权限设置，并通过数据库进行对比核实，确定是用户本人使用后方才进行开放，这也就提升了网络数据的储存安全性。而在网络数据共享方面，区块链技术运用了数据节点信息共享机制，一方面方便对方快速有效地接受用户传达的重点信息，另一方面也可以防止接收方对用户的原件进行篡改，因其具有不可逆性，因此会更加安全。区块链技术对于网络数据的存储和共享条件有利，可以全方位地通过技术手段开辟不通的分享渠道，增强信息的独立性和不可控性，却对于信息内容本身进行全面保真，从而提升用户在网络安全方面的体验度。</p>
+
+<p>3.2 提升保密性和网络数据的完整性
+由于区块链的特殊加密技术，使得网络信息任意读取的情况得到有效遏制，网络数据的保密性加强。另一方面，由于区块链上的信息是多节点传播，系统上的数据必须通过相关代码和密钥才能够发挥作用，再加上区块分类账的不可见性，使得区块链在网络数据传输中的及时机制加强，当遇到异常拦截时，系统会自动关闭区块内的信息显示渠道，以保障用户的信息安全不被窃取。区块链技术中的Merkle技术能够用多种方法确保数据不被遗漏、篡改和丢失，并且即使在存储空间不足的情况下也能够启动内储备份，从而保障数据的完整性不被侵犯，另一方面，区块链中的米哈希值函数能够通过科学有效的演算和自动分配系统机能，来使得数据形成树形结构，完整有序地分布排列，在需要用相关数据时，排列好的数据能够通过区块链分区有效地展现在用户的眼前，极大地方便了用户的安全数据操作。区块链技术能够结合系统自身性能来自动开启和分配适合用户的信息保护方案，并在全面保护用户隐私的前提下进行核对和二次复核，从而使得网络数据丢失或产生错漏的可能性完全消失。</p>
+
+<p>3.3 保障用户私人信息的安全
+用户通过区块链来进行网络社交、软件下载和上网冲浪时，区块链都会在用户登录账号之前采用特殊加密方式进行加密，用户在使用过程中无需通过常规的密码输入方式，而是用隐藏密码，从而减少在登录过程中导致信息被窃取甚至威胁到使用者的财产安全。用户在区块链技术的保护下，其账号初始数据都会保存在分布式账本中，账本自动开启全屏蔽式防火墙，只有经过三重验证之后才能够显示完整的信息，从而让个人的隐私得到保障，私人信息的安全性不断加强。并且，区块链技术能够利用节点与节点之间的关联性，实现信息在极短时间内有效传播，并阻隔掉其他所有非意愿性质的传播途径，使得网络通信稳定可靠地运行。如果在通信和信息传输过程中任意一个节点遭受到网络攻击，区块链系统仍然可以用去中心化特性继续运行，从而实现信息的无障碍传递。并且，用户在使用区块链进行网络交友、信息传输、事项发布和发表观点时，区块链技术都能够以区块作为模板来进行综合性协调，一旦监测到可疑事物立即开启深一度的防护程序，防止恶意程序搭建并危害用户信息安全，并设立只有相关区块密钥才能进入、查看和修改的信息屏蔽区，对用户安全进行了双重保障。</p>
+
+<p>3.4 能够对资产和网络交易进行智能化安全管理
+由于区块链技术含有时间戳和不可篡改的特性，其运用在互联网资产管理和交易时的频率也十分高，能够有效地保障交易的安全性。区块链技术能够对用户资产进行有效记录、授权和保密式追踪，并通过资产所有者的授权和签名标记作为准则，来开启进一步的资产管理和交易。在积分、数字货币、知识产权、金融投资等领域运用区块链技术，都能够让资产流动更加有效，避免出现数字交易过程中的双花问题，提高用户对于资产管理的便捷性，并有效保障资产安全。区块链技术能够有效追溯资产的任何变动情况，并利用区块分布来进行永久记录，并且由于密钥的特殊性，只有资产所有者才能够看到并进行操作，在资产查看和交易过程中，区块链系统会反复通过多种手段提示使用者正在进行的与资产有关的操作以及资金将要产生的变动明细，从而能够加强使用者的警惕性，促进网络资产管理和交易更具有智能性和安全性。</p>
+
+<p>4 结束语
+综上所述，区块链技术可以为网络安全防护提供安全可靠的技术，并通过功能强大的系统实现安全性与智能化的结合，让广大用户在使用网络过程当中免受恶意攻击和财产损失，并保护个人信息与其他隐私，在完成信息传递的同时更好地强化计算机系统的免疫力。因此，让区块链技术更好地普及于网络安全方面的应用，能够对社会安全体系的全面构建起到不可磨灭的贡献。</p>
+
+<p>论文来源 - 知网</p>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://dainif.github.io"><img src="/img/favicon.png" />Xiaojiang Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/nanomemori/" data-toggle="tooltip" data-placement="top" title="学科前沿-纳米网络">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/jdbc/" data-toggle="tooltip" data-placement="top" title="Java-JDBC使用教程">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+<script src="https://giscus.app/client.js"
+        data-repo="dainif/dainif.github.io"
+        data-repo-id="R_kgDOG1NDEg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOG1NDEs4CBJq7"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="JAVA">
+                            JAVA
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="Java">
+                            Java
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/mysql" title="MYSQL">
+                            MYSQL
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/servlet" title="Servlet">
+                            Servlet
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/xhtml" title="XHTML">
+                            XHTML
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Xiaojiang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:2562782392l@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    <li>
+                        <a target="_blank" href="/img/liuxiaojiang.jpg">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/dainif">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Xiaojiang Blog 2022
+                    <br>
+                    <a href="https://github.com/dainif/dainif.github.io">CleanWhite Hugo Blog</a> by <a href="https://dainif.github.io/">Xiaojiang</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=dainif&repo=dainif.github.io&type=star&count=true" >
+                    </iframe> 
+                    <br>
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                    &nbsp;|&nbsp;
+                    <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+                </br><script>
+                    function siteTime() {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = 2022;
+                        var startMonth = 2;
+                        var startDate = 8;
+                        var startHour = 8;
+                        var startMinute = 00;
+                        var startSecond = 00;
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                            minutes);
+                        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                            diffMinutes * minutes) / seconds);
+                        if (startYear == todayYear) {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffDays + " 天 " + diffHours +
+                                " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        } else {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffYears + " 年 " + diffDays +
+                                " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        }
+                    }
+                    setInterval(siteTime, 1000);
+                </script>
+                    <span id="sitetime">载入运行时间...</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

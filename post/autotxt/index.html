@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Xiaojiang Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://dainif.github.io/img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://dainif.github.io/img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="学科前沿-自动文本生成技术" />
+    <meta property="og:title" content="学科前沿-自动文本生成技术" />
+    <meta property="twitter:title" content="学科前沿-自动文本生成技术" />
+    
+
+    
+    <meta name="description" content="简单向前！日怪哦">
+    <meta property="og:description" content="简单向前！日怪哦" />
+    <meta property="twitter:description" content="简单向前！日怪哦" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="刘晓疆, liuxiaojiang, liuxiaojiang, , 刘晓疆的网络日志, 刘晓疆的博客, Liuxiaojiang Blog, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>学科前沿-自动文本生成技术-刘晓疆的博客 | LiuxiaojiangBlog</title>
+
+    <link rel="canonical" href="/post/autotxt/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Xiaojiang Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/fro">FRO</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tech">Tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/back">back</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/auto-blog/auto-blog-bg.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/%E8%87%AA%E5%8A%A8%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90" title="自动文本生成">
+                            自动文本生成
+                        </a>
+                        
+                    </div>
+                    <h1>学科前沿-自动文本生成技术</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;刘晓疆&#34;
+                             
+                            on 
+                            Saturday, March 26, 2022
+                            
+                                <span id="/post/autotxt/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("OwCSkn6e5Q4FpsdWndUFpukS-gzGzoHsz", "kggfwY9ukJChe5fLqx8ptChh");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                
+
+<p>文本生成概述</p>
+
+<h2 id="引言">引言</h2>
+
+<p>文本生成是自然语言处理中一个重要的研究领域，具有广阔的应用前景。国内外已经有诸如Automated Insights、Narrative Science以及“小南”机器人和“小明”机器人等文本生成系统投入使用。这些系统根据格式化数据或自然语言文本生成新闻、财报或者其他解释性文本。例如，Automated Insights的WordSmith技术已经被美联社等机构使用，帮助美联社报道大学橄榄球赛事、公司财报等新闻。这使得美联社不仅新闻更新速度更快，而且在人力资源不变的情况下扩大了其在公司财报方面报道的覆盖面。</p>
+
+<p>本文主要介绍了文本生成的定义、任务、评价指标和实现方法。重点介绍了目前正在成为文本生成技术主流的数据驱动方法。本文最后对文本生成技术的发展做了简单的展望。</p>
+
+<h3 id="文本生成的定义">文本生成的定义</h3>
+
+<p>Reiter等人将自然语言生成系统定义为接受非语言形式的信息作为输入，生成可读的文字表述。数据到文本的生成适用于这个定义。Wan等人将这个概念拓展为包括了文本到文本的生成、数据到文本的生成以及图像到文本的生成的文本生成技术。</p>
+
+<h3 id="文本生成任务">文本生成任务</h3>
+
+<p>按照输入数据的区别，可以将文本生成任务大致分为以下三类：1）文本到文本的生成；2）数据到文本的生成；3）图像到文本的生成。</p>
+
+<p>1）文本到文本的生成又可根据不同的任务分为（包括但不限于）：文本摘要、 古诗生成、文本复述等。文本摘要又可以分为抽取式摘要和生成式摘要。抽取式摘要通常包含信息抽取和规划等主要步骤。近期，在这方面有许多有趣的工作：Hu在为论文自动生成相关工作部分文本的任务上使用主题模型PLSA将句子按照主题进行聚类，使用SVR(Support Vector Regression)计算句子的相似度，最后使用线性规划生成相关工作文本。Wang在基于短语级别为学术论文生成演示文件的研究中采用了四个步骤。首先从论文中抽取名词短语、动词短语作为候选短语， 利用人工设计的特征和基于随机森林的分类器决定短语是否应出现在演示文件中，再训练一个基于随机森林的分类器判断两个短语是否存在一级、二级标题的关系，最后使用贪心策略选择句子构成一个演示文件。Zhang在根据体育赛事直播文字生成赛事报道的任务上，主要采用了Learning to Rank的方法结合人工设计的特征模版对句子进行打分，进而采用行列式点过程(DPP, Determinantal Point Process)进行句子选择。最近ACL 2017上发表了多篇生成式摘要的论文。如See等人提出了解决生成事实性错误文本和重复性文本问题的方法，Zhou等人加入选择门网络(selective gate network)进行摘要生成。古诗生成方面，Zhang等人使用循环神经网络进行生成，Wang等人将古诗生成划分为规划模型和生成模型两部份。Zhang等人在Seq2Seq模型的基础上加入记忆模块。文本复述方面，Quirk等人使用机器翻译的方法生成复述文本，Max等人采用基于枢轴(pivot)的复述生成方法，以另一种语言作为中间媒介，将源语言翻译成另一种语言后再翻译为原来的语言。</p>
+
+<p>2）结构化数据生成文本的任务上，Reiter等人将数据到文本的系统分为了信号处理（视输入数据类型可选）、数据分析、文档规划和文本实现四个步骤。Mei等人基于encoder-decoder模型加入了aligner选择重要信息，基于深度学习提出了一个端到端的根据数据生成文本的模型。</p>
+
+<p>3）图像到文本的生成方面也有不同的任务，如image-caption、故事生成、基于图像的问答等。在为图像生成解释性文本（image-caption）的任务上，Vinyals等人使用类似encoder-decoder的模型进行生成。Xu等人则进一步加入Attention机制。Huang等人提出针对图片序列生成故事的任务，并且提供了单张图片的描述性文本、单张图片的故事以及图片序列的故事三个层级的数据集。在第三个数据集上，他们拓展之前的模型并加入一些技巧提供了该任务的一些baseline。并通过对自动化评价指标以及人工评价相关度的衡量，确定使用METEOR作为自动化评价指标。基于图像的问答任务上，Shih等人提出了使用基于Attention机制的模型用VGGnet编码图片，用词向量求均值表示问题，最后经过两层网络生成答案 、Wu等人提出了整合image-caption模型和外部知识库等生成答案。</p>
+
+<h3 id="文本生成方法">文本生成方法</h3>
+
+<p>文本生成主要有基于规则、基于规划(Planning-based)以及数据驱动(data-driven)的方法本文重点介绍数据驱动的方法。</p>
+
+<h3 id="基于语言模型的自然语言生成">基于语言模型的自然语言生成</h3>
+
+<p>基于马尔可夫的语言模型在数据驱动的自然语言生成中有着重要的应用。它利用数据和文字间的对齐语料，主要采用两个步骤：内容规划和内容实现为数据生成对应的文本。Oh等人在搭建面向旅行领域的对话系统时，在内容规划部分使用bigram作特征根据近期的对话历史，选取待生成文本中需要出现的属性，内容实现部分使用n-gram语言模型生成对话。Ratnaparkhi等人经过实验对比发现在语言模型上加入依存语法关系有助于改善生成效果。Angeli等人则将文本生成的过程分为三种决策（以生成天气报道为例）：1）宏观的内容选择，如选择温度等方面进行报道。2）微观内容选择，如选择最低温度或者最高温度进行报道。3）模版选择。这三个决策步骤交替进行。每次决策的时候会考虑到历史决策信息，这有助于处理需要考虑长距离的依赖关系的情况，如语义连贯性。</p>
+
+<h3 id="使用深度学习方法的自然语言生成">使用深度学习方法的自然语言生成</h3>
+
+<p>在文本到文本的生成方面，Zhang等人使用RNN进行中文古诗生成，用户输入关键词后首先拓展为短语，并用来生成诗的第一行。接下来的每一行结合当时所有已生成的诗句进行生成。Wang则将古诗生成分为规划模型和生成模型两部份。规划模型部分得到用户的输入，在使用TextRank进行关键词抽取和使用RNN语言模型和基于知识库的方法进行拓展后，获得一个主题词序列，作为写作大纲，每一个主题词在下一个部分生成一行诗。生成模型部分基于encoder-decoder模型，增加一个encoder为主题词获得一个向量表示。另一 个encoder编码已经生成的句子。使用attention-based的模型，decoder综合主题词和已经生成的句子，生成下一句的内容。通过这两个模型，在更好的控制每一行诗的主题的同时保持诗词的流畅性。最近，在ACL 2017上发表了多篇生成式摘要的论文。如See等人为了解决生成一些与事实不符的内容，在标准的基于attention的Seq2Seq模型上结合Pointer Network，使其既可以生成词，也可以从原文中直接把一些词放入生成的文本中。为了解决重复的问题，加入coverage模型。Zhou等人则通过在encoder和decoder之间加入一个选择门网络(selective gate network)作为输入句子的第二层表示，提高编码的有效性，降低decoder的负担。</p>
+
+<p>在数据到文本的生成方面，Mei提出了encoder-aligner-decoder的端到端模型。主要特点是在标准的encoder和进行了改进的decoder之间加入用于选择将要描述的重要信息的aligner。它对每条记录生成的权重分为两个部分。第一部分是针对每条记录的向量表示单独计算一个权重。 第二部分是在decoder的第t步时，根据decoder已经生成的内容及对应记录的向量表示计算权重。 在两个数据集上取得比较好的效果提升。它的优势在于同步训练内容选择和生成部分且不需要针对任务人工设置特征，普适性较好。</p>
+
+<p>在图像到文本的生成方面，Vinyals使用Seq2Seq的模型，首先利用深层卷积神经网络DCNN 对图像建模，然后由一个LSTM网络进行解码生成最终的文本。与传统的机器学习方法相比，无需进行图像和文本中词的对齐、调整顺序等步骤。Xu则进一步提出利用Attention机制来加强词语和图像块之间的对齐，在生成文字的时候，模拟人看东西时关注点逐渐转移的过程，以生成更符合人习惯的文本。</p>
+
+<h2 id="模型评价">模型评价</h2>
+
+<p>No evaluation, no research。如何对生成的文本进行评价也是文本生成研究中重要的一环。Gkatzia总结2005年到2014年间的常用的针对文本生成的评价方法，将其分为内在评价和外在评价方法。其中内在评价关注文本的正确性、流畅度和易理解性。常见的内在评价方法又可分为两类:1）采用BLEU、NIST和ROUGE等进行自动化评价，评估生成文本和参考文本间相似度来衡量生成质量。2）通过人工评价，从有用性等对文本进行打分。外在评价则关注生成文本在实际应用中的可用性。根据他们的分析，内在评价方法是最为流行的评价方法。2012-2015年间发表的论文超半数使用自动化评价指标进行评价，但由于它需要有大量的对齐语料，且对于对齐语料的质量很敏感，所以在使用自动化评价指标的同时，研究者常常还会同时使用其它的评价方法，如直观且易于操作（与外在评价方法相比）的人工评价生成文本的正确性、流畅性方法。</p>
+
+<h2 id="展望">展望</h2>
+
+<p>文本生成技术，尤其是数据到文本的生成已经在商业领域获得应用，近期，国内也出现了许多投入使用的利用文本生成技术自动生成新闻的系统。文本生成技术的应用前景广阔，具有巨大的市场需求。相信随着机器学习技术的进步、新的公开数据集的发布、市场需求的推动以及计算性能的飞速提高，文本生成领域的研究将取得更大的发展与突破。</p>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p>「真诚赞赏，手留余香」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://dainif.github.io"><img src="/img/favicon.png" />Xiaojiang Blog</a></span>
+        
+	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/jdbc/" data-toggle="tooltip" data-placement="top" title="Java-JDBC使用教程">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+<script src="https://giscus.app/client.js"
+        data-repo="dainif/dainif.github.io"
+        data-repo-id="R_kgDOG1NDEg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOG1NDEs4CBJq7"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/html" title="HTML">
+                            HTML
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="JAVA">
+                            JAVA
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/java" title="Java">
+                            Java
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/mysql" title="MYSQL">
+                            MYSQL
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/servlet" title="Servlet">
+                            Servlet
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/xhtml" title="XHTML">
+                            XHTML
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Xiaojiang Blog" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+                   
+                    
+                    <li>
+                        <a href="mailto:2562782392l@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    <li>
+                        <a target="_blank" href="/img/liuxiaojiang.jpg">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/dainif">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Xiaojiang Blog 2022
+                    <br>
+                    <a href="https://github.com/dainif/dainif.github.io">CleanWhite Hugo Blog</a> by <a href="https://dainif.github.io/">Xiaojiang</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=dainif&repo=dainif.github.io&type=star&count=true" >
+                    </iframe> 
+                    <br>
+                    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                    &nbsp;|&nbsp;
+                    <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+                </br><script>
+                    function siteTime() {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = 2022;
+                        var startMonth = 2;
+                        var startDate = 8;
+                        var startHour = 8;
+                        var startMinute = 00;
+                        var startSecond = 00;
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+                        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                            minutes);
+                        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                            diffMinutes * minutes) / seconds);
+                        if (startYear == todayYear) {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffDays + " 天 " + diffHours +
+                                " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        } else {
+                            
+                            document.getElementById("sitetime").innerHTML = "已安全运行 " + diffYears + " 年 " + diffDays +
+                                " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        }
+                    }
+                    setInterval(siteTime, 1000);
+                </script>
+                    <span id="sitetime">载入运行时间...</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

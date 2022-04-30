@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>纳米网络 on Xiaojiang Blog</title>
+    <link>https://dainif.github.io/tags/%E7%BA%B3%E7%B1%B3%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 纳米网络 on Xiaojiang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Mar 2022 15:57:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://dainif.github.io/tags/%E7%BA%B3%E7%B1%B3%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学科前沿-纳米网络</title>
+      <link>https://dainif.github.io/post/nanomemori/</link>
+      <pubDate>Sat, 05 Mar 2022 15:57:48 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/nanomemori/</guid>
+      <description>纳米网络 纳米网络或纳米级网络，计算，数据存储，传感器仅能执行简单的任务，例如，操作纳米机器（数百的纳米从数微米是一组互连的设备。纳米网络有望</description>
+    </item>
+    
+  </channel>
+</rss>

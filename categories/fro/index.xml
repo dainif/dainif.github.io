@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FRO on Xiaojiang Blog</title>
+    <link>https://dainif.github.io/categories/fro/</link>
+    <description>Recent content in FRO on Xiaojiang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Mar 2022 08:23:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://dainif.github.io/categories/fro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学科前沿-自动文本生成技术</title>
+      <link>https://dainif.github.io/post/autotxt/</link>
+      <pubDate>Sat, 26 Mar 2022 08:23:00 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/autotxt/</guid>
+      <description>文本生成概述 引言 文本生成是自然语言处理中一个重要的研究领域，具有广阔的应用前景。国内外已经有诸如Automated Insights、Narr</description>
+    </item>
+    
+    <item>
+      <title>学科前沿-区块链</title>
+      <link>https://dainif.github.io/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Fri, 11 Mar 2022 14:20:04 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/</guid>
+      <description>定义 区块链是一个信息技术领域的术语。 从本质上讲，它是一个共享数据库，存储于其中的数据或信息，具有“不可伪造”“全程留痕”“可以追溯”“公开透</description>
+    </item>
+    
+    <item>
+      <title>学科前沿-纳米网络</title>
+      <link>https://dainif.github.io/post/nanomemori/</link>
+      <pubDate>Sat, 05 Mar 2022 15:57:48 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/nanomemori/</guid>
+      <description>纳米网络 纳米网络或纳米级网络，计算，数据存储，传感器仅能执行简单的任务，例如，操作纳米机器（数百的纳米从数微米是一组互连的设备。纳米网络有望</description>
+    </item>
+    
+  </channel>
+</rss>
