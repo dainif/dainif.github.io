@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tops on Xiaojiang Blog</title>
-    <link>https://dainif.github.io/top/</link>
+    <link>http://dainif.github.io/top/</link>
     <description>Recent content in Tops on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://dainif.github.io/top/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dainif.github.io/top/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://dainif.github.io/top/about/</link>
+      <link>http://dainif.github.io/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dainif.github.io/top/about/</guid>
+      <guid>http://dainif.github.io/top/about/</guid>
       <description>Xiaojiang Liu is an Hebei University of Engineering, a college junior, has a strong interest in computers and is currently focused on learning Java. After several years of study, He has learned a lot of knowledge, is ready to make his mark in this industry. This blog is designed to showcase some of the blogger’s learning experiences and to lay the groundwork</description>
     </item>
     
     <item>
       <title>Posts Archive</title>
-      <link>https://dainif.github.io/top/archive/</link>
+      <link>http://dainif.github.io/top/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dainif.github.io/top/archive/</guid>
+      <guid>http://dainif.github.io/top/archive/</guid>
       <description></description>
     </item>
     

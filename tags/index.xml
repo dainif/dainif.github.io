@@ -2,111 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Xiaojiang Blog</title>
-    <link>https://dainif.github.io/tags/</link>
+    <link>http://dainif.github.io/tags/</link>
     <description>Recent content in Tags on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Feb 2022 09:58:42 +0800</lastBuildDate>
     
-	<atom:link href="https://dainif.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dainif.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://dainif.github.io/tags/</link>
+      <link>http://dainif.github.io/tags/</link>
       <pubDate>Sun, 27 Feb 2022 09:58:42 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/</guid>
+      <guid>http://dainif.github.io/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTML</title>
-      <link>https://dainif.github.io/tags/html/</link>
+      <link>http://dainif.github.io/tags/html/</link>
       <pubDate>Tue, 01 Mar 2022 18:27:41 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/html/</guid>
+      <guid>http://dainif.github.io/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JAVA</title>
-      <link>https://dainif.github.io/tags/java/</link>
+      <link>http://dainif.github.io/tags/java/</link>
       <pubDate>Tue, 01 Mar 2022 18:27:41 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/java/</guid>
+      <guid>http://dainif.github.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://dainif.github.io/tags/java/</link>
+      <link>http://dainif.github.io/tags/java/</link>
       <pubDate>Fri, 11 Mar 2022 15:09:54 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/java/</guid>
+      <guid>http://dainif.github.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MYSQL</title>
-      <link>https://dainif.github.io/tags/mysql/</link>
+      <link>http://dainif.github.io/tags/mysql/</link>
       <pubDate>Fri, 04 Mar 2022 18:41:34 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/mysql/</guid>
+      <guid>http://dainif.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MySQL</title>
-      <link>https://dainif.github.io/tags/mysql/</link>
+      <link>http://dainif.github.io/tags/mysql/</link>
       <pubDate>Fri, 11 Mar 2022 15:09:54 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/mysql/</guid>
+      <guid>http://dainif.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Servlet</title>
-      <link>https://dainif.github.io/tags/servlet/</link>
+      <link>http://dainif.github.io/tags/servlet/</link>
       <pubDate>Mon, 28 Feb 2022 16:47:45 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/servlet/</guid>
+      <guid>http://dainif.github.io/tags/servlet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>XHTML</title>
-      <link>https://dainif.github.io/tags/xhtml/</link>
+      <link>http://dainif.github.io/tags/xhtml/</link>
       <pubDate>Mon, 28 Feb 2022 16:47:45 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/xhtml/</guid>
+      <guid>http://dainif.github.io/tags/xhtml/</guid>
       <description></description>
     </item>
     
     <item>
       <title>区块链</title>
-      <link>https://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
+      <link>http://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
       <pubDate>Fri, 11 Mar 2022 14:20:04 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</guid>
+      <guid>http://dainif.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</guid>
       <description></description>
     </item>
     
     <item>
       <title>纳米网络</title>
-      <link>https://dainif.github.io/tags/%E7%BA%B3%E7%B1%B3%E7%BD%91%E7%BB%9C/</link>
+      <link>http://dainif.github.io/tags/%E7%BA%B3%E7%B1%B3%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Sat, 05 Mar 2022 15:57:48 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/%E7%BA%B3%E7%B1%B3%E7%BD%91%E7%BB%9C/</guid>
+      <guid>http://dainif.github.io/tags/%E7%BA%B3%E7%B1%B3%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>自动文本生成</title>
-      <link>https://dainif.github.io/tags/%E8%87%AA%E5%8A%A8%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90/</link>
+      <link>http://dainif.github.io/tags/%E8%87%AA%E5%8A%A8%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90/</link>
       <pubDate>Sat, 26 Mar 2022 08:23:00 +0800</pubDate>
       
-      <guid>https://dainif.github.io/tags/%E8%87%AA%E5%8A%A8%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90/</guid>
+      <guid>http://dainif.github.io/tags/%E8%87%AA%E5%8A%A8%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90/</guid>
       <description></description>
     </item>
     
