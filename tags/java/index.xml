@@ -6,10 +6,19 @@
     <description>Recent content in Java on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Mar 2022 15:09:54 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Feb 2023 18:41:34 +0800</lastBuildDate>
     
 	<atom:link href="https://dainif.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>学佳澳学习</title>
+      <link>https://dainif.github.io/post/xja_study/1/</link>
+      <pubDate>Wed, 15 Feb 2023 18:41:34 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/xja_study/1/</guid>
+      <description>springboot+mybatis使用@Select 数据为空 用mybatis注解Select查询List，返回有对象个数，但是为null @Select(&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>Java-JDBC使用教程</title>
@@ -27,6 +36,11 @@
       
       <guid>https://dainif.github.io/post/a-small-program/</guid>
       <description>当我看到你的第一眼，就把人生里浪漫的是想了个遍。世人的喜欢只会停留在新鲜的第一面，有了爱的牵绊那就会有一生的纠缠&amp;hellip;一生只此一回</description>
+    </item>
+    
+  </channel>
+</rss>.github.io/post/banksystem/</guid>
+      <description>前言 银行存储管理系统工作繁琐，包含大量数据信息数据，因此就需要一个完善的银行管理系统来实现这些数据的有效管理。该系统采用模块化程序设计方法，</description>
     </item>
     
   </channel>

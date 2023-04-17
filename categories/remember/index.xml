@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Remember on Xiaojiang Blog</title>
+    <link>https://dainif.github.io/categories/remember/</link>
+    <description>Recent content in Remember on Xiaojiang Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Feb 2023 18:41:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://dainif.github.io/categories/remember/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学佳澳学习</title>
+      <link>https://dainif.github.io/post/xja_study/1/</link>
+      <pubDate>Wed, 15 Feb 2023 18:41:34 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/xja_study/1/</guid>
+      <description>springboot+mybatis使用@Select 数据为空 用mybatis注解Select查询List，返回有对象个数，但是为null @Select(&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>

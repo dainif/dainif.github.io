@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dainif.github.io/post/xja_study/1/</loc>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dainif.github.io/post/math/</loc>
+    <lastmod>2022-05-01T14:29:37+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dainif.github.io/post/autotxt/</loc>
     <lastmod>2022-03-26T08:23:00+08:00</lastmod>
   </url>
@@ -54,7 +64,7 @@
   
   <url>
     <loc>https://dainif.github.io/tags/</loc>
-    <lastmod>2022-02-27T09:58:42+08:00</lastmod>
+    <lastmod>2022-05-01T14:29:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -98,30 +108,42 @@
   
   <url>
     <loc>https://dainif.github.io/tags/java/</loc>
-    <lastmod>2022-03-11T15:09:54+08:00</lastmod>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dainif.github.io/tags/mysql/</loc>
-    <lastmod>2022-03-04T18:41:34+08:00</lastmod>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dainif.github.io/tags/mysql/</loc>
     <lastmod>2022-03-11T15:09:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dainif.github.io/tags/mybatis/</loc>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dainif.github.io/post/</loc>
-    <lastmod>2022-03-26T08:23:00+08:00</lastmod>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dainif.github.io/top/archive/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dainif.github.io/categories/remember/</loc>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -136,14 +158,20 @@
   </url>
   
   <url>
+    <loc>https://dainif.github.io/tags/springboot/</loc>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dainif.github.io/tags/</loc>
-    <lastmod>2022-02-27T09:58:42+08:00</lastmod>
+    <lastmod>2022-05-01T14:29:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dainif.github.io/categories/tech/</loc>
-    <lastmod>2022-03-11T15:09:54+08:00</lastmod>
+    <lastmod>2022-05-01T14:29:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,7 +188,7 @@
   
   <url>
     <loc>https://dainif.github.io/</loc>
-    <lastmod>2022-03-26T08:23:00+08:00</lastmod>
+    <lastmod>2023-02-15T18:41:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
