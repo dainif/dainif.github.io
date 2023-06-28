@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="MYSQL数据库学习" />
-    <meta property="og:title" content="MYSQL数据库学习" />
-    <meta property="twitter:title" content="MYSQL数据库学习" />
+    <meta name="title" content="毕业设计" />
+    <meta property="og:title" content="毕业设计" />
+    <meta property="twitter:title" content="毕业设计" />
     
 
     
-    <meta name="description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="毕业设计完成中遇到的问题即解决方法">
+    <meta property="og:description" content="毕业设计完成中遇到的问题即解决方法" />
+    <meta property="twitter:description" content="毕业设计完成中遇到的问题即解决方法" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="刘晓疆, liuxiaojiang, liuxiaojiang, , 刘晓疆的网络日志, 刘晓疆的博客, Liuxiaojiang Blog, 博客, 个人网站">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>MYSQL数据库学习-刘晓疆的博客 | LiuxiaojiangBlog</title>
+    <title>毕业设计-刘晓疆的博客 | LiuxiaojiangBlog</title>
 
-    <link rel="canonical" href="/post/five/">
+    <link rel="canonical" href="/post/xja_study/2/">
 
     
     
@@ -106,6 +106,10 @@
                         </li>
                         
                         <li>
+                            <a href="/categories/remember">Remember</a>
+                        </li>
+                        
+                        <li>
                             <a href="/categories/tech">Tech</a>
                         </li>
                         
@@ -167,7 +171,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/five-blog/sun.jpg')
+        background-image: url('/img/six-blog/six-blog-bg.jpg')
     }
 </style>
 
@@ -179,21 +183,29 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/java" title="Java">
+                            Java
+                        </a>
+                        
                         <a class="tag" href="/tags/mysql" title="MYSQL">
                             MYSQL
                         </a>
                         
-                        <a class="tag" href="/tags/java" title="JAVA">
-                            JAVA
+                        <a class="tag" href="/tags/mybatis" title="Mybatis">
+                            Mybatis
                         </a>
                         
-                        <a class="tag" href="/tags/html" title="HTML">
-                            HTML
+                        <a class="tag" href="/tags/springboot" title="SpringBoot">
+                            SpringBoot
+                        </a>
+                        
+                        <a class="tag" href="/tags/vue" title="Vue">
+                            Vue
                         </a>
                         
                     </div>
-                    <h1>MYSQL数据库学习</h1>
-                    <h2 class="subheading">MySQL 是最流行的关系型数据库管理系统</h2>
+                    <h1>毕业设计</h1>
+                    <h2 class="subheading">Java&#43;MySQL&#43;Vue</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -201,9 +213,9 @@
                                      &#34;刘晓疆&#34;
                              
                             on 
-                            Tuesday, March 1, 2022
+                            Monday, January 1, 0001
                             
-                                <span id="/post/five/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                                <span id="/post/xja_study/2/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -363,165 +375,15 @@ $(function() {
                 
                 
 
-<h2 id="什么是数据库">什么是数据库？</h2>
+<h1 id="省市区三级联动">省市区三级联动</h1>
 
-<p>数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。</p>
+<h2 id="mysql">mysql</h2>
 
-<p>每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜索和复制所保存的数据。</p>
-
-<p>我们也可以将数据存储在文件中，但是在文件中读写数据速度相对较慢。</p>
-
-<p>所以，现在我们使用关系型数据库管理系统（RDBMS）来存储和管理大数据量。所谓的关系型数据库，是建立在关系模型基础上的数据库，借助于集合代数等数学概念和方法来处理数据库中的数据。</p>
-
-<p>RDBMS 即关系数据库管理系统(Relational Database Management System)的特点：</p>
-
-<p>*1.数据以表格的形式出现<br>
-*2.每行为各种记录名称<br>
-*3.每列为记录名称所对应的数据域<br>
-*4.许多的行和列组成一张表单<br>
-*5.若干的表单组成database</p>
-
-<h2 id="rdbms-术语">RDBMS 术语</h2>
-
-<p>在我们开始学习MySQL 数据库前，让我们先了解下RDBMS的一些术语：</p>
-
-<p>数据库: 数据库是一些关联表的集合。<br></p>
-
-<p>数据表: 表是数据的矩阵。在一个数据库中的表看起来像一个简单的电子表格。<br></p>
-
-<p>列: 一列(数据元素) 包含了相同类型的数据, 例如邮政编码的数据。<br></p>
-
-<p>行：一行（=元组，或记录）是一组相关的数据，例如一条用户订阅的数据。<br></p>
-
-<p>冗余：存储两倍数据，冗余降低了性能，但提高了数据的安全性。<br></p>
-
-<p>主键：主键是唯一的。一个数据表中只能包含一个主键。你可以使用主键来查询数据。<br></p>
-
-<p>外键：外键用于关联两个表。<br></p>
-
-<p>复合键：复合键（组合键）将多个列作为一个索引键，一般用于复合索引。<br></p>
-
-<p>索引：使用索引可快速访问数据库表中的特定信息。索引是对数据库表中一列或多列的值进行排序的一种结构。类似于书籍的目录。<br></p>
-
-<p>参照完整性: 参照的完整性要求关系中不允许引用不存在的实体。与实体完整性是关系模型必须满足的完整性约束条件，目的是保证数据的一致性。</p>
-
-<h2 id="管理mysql的命令">管理MySQL的命令</h2>
-
-<p>以下列出了使用Mysql数据库过程中常用的命令：</p>
-
-<p>USE 数据库名 :
-选择要操作的Mysql数据库，使用该命令后所有Mysql命令都只针对该数据库。</p>
-
-<pre><code>mysql&gt; use RUNOOB;
-Database changed
-SHOW DATABASES:
-列出 MySQL 数据库管理系统的数据库列表。
-
-mysql&gt; SHOW DATABASES;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| RUNOOB             |
-| cdcol              |
-| mysql              |
-| onethink           |
-| performance_schema |
-| phpmyadmin         |
-| test               |
-| wecenter           |
-| wordpress          |
-+--------------------+
-10 rows in set (0.02 sec)
-SHOW TABLES:
-显示指定数据库的所有表，使用该命令前需要使用 use 命令来选择要操作的数据库。
-
-mysql&gt; use RUNOOB;
-Database changed
-mysql&gt; SHOW TABLES;
-+------------------+
-| Tables_in_runoob |
-+------------------+
-| employee_tbl     |
-| runoob_tbl       |
-| tcount_tbl       |
-+------------------+
-3 rows in set (0.00 sec)
-SHOW COLUMNS FROM 数据表:
-显示数据表的属性，属性类型，主键信息 ，是否为 NULL，默认值等其他信息。
-
-mysql&gt; SHOW COLUMNS FROM runoob_tbl;
-+-----------------+--------------+------+-----+---------+-------+
-| Field           | Type         | Null | Key | Default | Extra |
-+-----------------+--------------+------+-----+---------+-------+
-| runoob_id       | int(11)      | NO   | PRI | NULL    |       |
-| runoob_title    | varchar(255) | YES  |     | NULL    |       |
-| runoob_author   | varchar(255) | YES  |     | NULL    |       |
-| submission_date | date         | YES  |     | NULL    |       |
-+-----------------+--------------+------+-----+---------+-------+
-4 rows in set (0.01 sec)
-SHOW INDEX FROM 数据表:
-显示数据表的详细索引信息，包括PRIMARY KEY（主键）。
-
-mysql&gt; SHOW INDEX FROM runoob_tbl;
-+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
-| Table      | Non_unique | Key_name | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |
-+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
-| runoob_tbl |          0 | PRIMARY  |            1 | runoob_id   | A         |           2 |     NULL | NULL   |      | BTREE      |         |               |
-+------------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
-1 row in set (0.00 sec)
-SHOW TABLE STATUS [FROM db_name] [LIKE 'pattern'] \G:
-该命令将输出Mysql数据库管理系统的性能及统计信息。
-
-mysql&gt; SHOW TABLE STATUS  FROM RUNOOB;   # 显示数据库 RUNOOB 中所有表的信息
-
-mysql&gt; SHOW TABLE STATUS from RUNOOB LIKE 'runoob%';     # 表名以runoob开头的表的信息
-mysql&gt; SHOW TABLE STATUS from RUNOOB LIKE 'runoob%'\G;   # 加上 \G，查询结果按列打印
+<pre><code>创建省表并插入省信息
 </code></pre>
 
-<h2 id="mysql-创建数据库">MySQL 创建数据库</h2>
-
-<p>我们可以在登陆 MySQL 服务后，使用 create 命令创建数据库，语法如下:</p>
-
-<p>CREATE DATABASE 数据库名;</p>
-
-<h2 id="mysql-删除数据库">MySQL 删除数据库</h2>
-
-<p>使用普通用户登陆 MySQL 服务器，你可能需要特定的权限来创建或者删除 MySQL 数据库，所以我们这边使用 root 用户登录，root 用户拥有最高权限。</p>
-
-<p>在删除数据库过程中，务必要十分谨慎，因为在执行删除命令后，所有数据将会消失。</p>
-
-<p>drop 命令删除数据库<br>
-drop 命令格式：<br></p>
-
-<p>drop database &lt;数据库名&gt;;</p>
-
-<h2 id="mysql-正则表达式">MySQL 正则表达式</h2>
-
-<p>在前面的章节我们已经了解到MySQL可以通过 LIKE &hellip;% 来进行模糊匹配。</p>
-
-<p>MySQL 同样也支持其他正则表达式的匹配， MySQL中使用 REGEXP 操作符来进行正则表达式匹配。</p>
-
-<p>如果您了解PHP或Perl，那么操作起来就非常简单，因为MySQL的正则表达式匹配与这些脚本的类似。</p>
-
-<p>下表中的正则模式可应用于 REGEXP 操作符中。</p>
-
-<pre><code>
-模式	描述
-^	匹配输入字符串的开始位置。如果设置了 RegExp 对象的 Multiline 属性，^ 也匹配 '\n' 或 '\r' 之后的位置。
-$	匹配输入字符串的结束位置。如果设置了RegExp 对象的 Multiline 属性，$ 也匹配 '\n' 或 '\r' 之前的位置。
-.	匹配除 &quot;\n&quot; 之外的任何单个字符。要匹配包括 '\n' 在内的任何字符，请使用像 '[.\n]' 的模式。
-[...]	字符集合。匹配所包含的任意一个字符。例如， '[abc]' 可以匹配 &quot;plain&quot; 中的 'a'。
-[^...]	负值字符集合。匹配未包含的任意字符。例如， '[^abc]' 可以匹配 &quot;plain&quot; 中的'p'。
-p1|p2|p3 匹配 p1 或 p2 或 p3。例如，'z|food' 能匹配 &quot;z&quot; 或 &quot;food&quot;。'(z|f)ood' 则匹配 &quot;zood&quot; 或 &quot;food&quot;。
-*	匹配前面的子表达式零次或多次。例如，zo* 能匹配 &quot;z&quot; 以及 &quot;zoo&quot;。* 等价于{0,}。
-+	匹配前面的子表达式一次或多次。例如，'zo+' 能匹配 &quot;zo&quot; 以及 &quot;zoo&quot;，但不能匹配 &quot;z&quot;。+ 等价于 {1,}。
-{n}	n 是一个非负整数。匹配确定的 n 次。例如，'o{2}' 不能匹配 &quot;Bob&quot; 中的 'o'，但是能匹配 &quot;food&quot; 中的两个 o。
-{n,m}	m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。
-</code></pre>
-
-<p><a href="https://www.runoob.com/mysql/mysql-tutorial.html">本文摘录自菜鸟</a><br>
-<a href="https://blog.csdn.net/jungle_rao/article/details/81274720">JDBC教程</a></p>
+<p>···
+···</p>
 
 
                 
@@ -569,14 +431,9 @@ p1|p2|p3 匹配 p1 或 p2 或 p3。例如，'z|food' 能匹配 &quot;z&quot; 或
                 <hr>
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/post/four/" data-toggle="tooltip" data-placement="top" title="CSS学习">&larr;
-                            Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/post/a-small-program/" data-toggle="tooltip" data-placement="top" title="图书管理系统">Next
+                        <a href="/post/banksystem/" data-toggle="tooltip" data-placement="top" title="简易银行系统">Next
                             Post &rarr;</a>
                     </li>
                     
@@ -663,6 +520,10 @@ p1|p2|p3 匹配 p1 或 p2 或 p3。例如，'z|food' 能匹配 &quot;z&quot; 或
                         
                         
                         
+                        <a href="/tags/mybatis" title="Mybatis">
+                            Mybatis
+                        </a>
+                        
                         
                         
                         <a href="/tags/servlet" title="Servlet">
@@ -670,6 +531,10 @@ p1|p2|p3 匹配 p1 或 p2 或 p3。例如，'z|food' 能匹配 &quot;z&quot; 或
                         </a>
                         
                         
+                        
+                        <a href="/tags/springboot" title="SpringBoot">
+                            SpringBoot
+                        </a>
                         
                         
                         

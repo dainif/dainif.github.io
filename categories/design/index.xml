@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SpringBoot on Xiaojiang Blog</title>
-    <link>https://dainif.github.io/tags/springboot/</link>
-    <description>Recent content in SpringBoot on Xiaojiang Blog</description>
+    <title>DESIGN on Xiaojiang Blog</title>
+    <link>https://dainif.github.io/categories/design/</link>
+    <description>Recent content in DESIGN on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Mar 2023 18:27:41 +0800</lastBuildDate>
     
-	<atom:link href="https://dainif.github.io/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dainif.github.io/categories/design/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
