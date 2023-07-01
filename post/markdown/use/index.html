@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="Web学习笔记" />
-    <meta property="og:title" content="Web学习笔记" />
-    <meta property="twitter:title" content="Web学习笔记" />
+    <meta name="title" content="MarkDown 文档的使用" />
+    <meta property="og:title" content="MarkDown 文档的使用" />
+    <meta property="twitter:title" content="MarkDown 文档的使用" />
     
 
     
-    <meta name="description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="刘晓疆，程序员, 开源爱好者 | 这里是刘晓疆 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="MarkDown 文档的使用">
+    <meta property="og:description" content="MarkDown 文档的使用" />
+    <meta property="twitter:description" content="MarkDown 文档的使用" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="刘晓疆, liuxiaojiang, liuxiaojiang, , 刘晓疆的网络日志, 刘晓疆的博客, Liuxiaojiang Blog, 博客, 个人网站">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Web学习笔记-刘晓疆的博客 | LiuxiaojiangBlog</title>
+    <title>MarkDown 文档的使用-刘晓疆的博客 | LiuxiaojiangBlog</title>
 
-    <link rel="canonical" href="/post/second/">
+    <link rel="canonical" href="/post/markdown/use/">
 
     
     
@@ -167,7 +167,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/sec-blog/post-bg-coffee.jpg')
+        background-image: url('/img/')
     }
 </style>
 
@@ -179,35 +179,23 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/html" title="HTML">
-                            HTML
-                        </a>
-                        
-                        <a class="tag" href="/tags/java" title="JAVA">
-                            JAVA
-                        </a>
-                        
-                        <a class="tag" href="/tags/servlet" title="Servlet">
-                            Servlet
-                        </a>
-                        
-                        <a class="tag" href="/tags/xhtml" title="XHTML">
-                            XHTML
+                        <a class="tag" href="/tags/" title="">
+                            
                         </a>
                         
                     </div>
-                    <h1>Web学习笔记</h1>
-                    <h2 class="subheading">HTML&#43;Servlet&#43;XHTML</h2>
+                    <h1>MarkDown 文档的使用</h1>
+                    <h2 class="subheading">MarkDown 文档的使用</h2>
                     <span class="meta">
                         
                             Posted by 
                             
-                                     &#34;刘晓疆&#34;
+                                     &#34;XiaoJiang&#34;
                              
                             on 
-                            Tuesday, February 15, 2022
+                            Wednesday, June 28, 2023
                             
-                                <span id="/post/second/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                                <span id="/post/markdown/use/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -365,105 +353,180 @@ $(function() {
                 post-container">
 
                 
-                <p>HTML
-关于html的一些基础知识
-</p>
+                
 
-<pre><code>&lt;!DOCTYPE html&gt; 声明为 HTML5 文档
-&lt;html&gt; 元素是 HTML 页面的根元素
-&lt;head&gt; 元素包含了文档的元（meta）数据，如 &lt;meta charset=&quot;utf-8&quot;&gt; 定义网页编码格式为 utf-8。
-&lt;title&gt; 元素描述了文档的标题
-&lt;body&gt; 元素包含了可见的页面内容
-&lt;h1&gt; 元素定义一个大标题
-&lt;p&gt; 元素定义一个段落
-&lt;a&gt; 元素定义一个链接
-&lt;img&gt; 元素定义一个图像
+<h1 id="markdown文档写作">MarkDown文档写作</h1>
+
+<h2 id="1-markdown简介">1.MarkDown简介</h2>
+
+<p>Markdown 是一种轻量级标记语言，一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器</p>
+
+<p>Markdown文件后缀名为 .md</p>
+
+<p>优点：
+轻量化、易读易写
+对于图片，图表、数学式都有支持
+许多网站都广泛使用 Markdown 来撰写文档
+使用标记语言语法编排文档，简洁明了
+Markdown可以快速转化为演讲PPT、Word、PDF等产品文档
+可用于编写说明文档，以“README.md”的文件名保存在软件的目录下面</p>
+
+<h2 id="2-markdown相关操作与常用语法">2.MarkDown相关操作与常用语法</h2>
+
+<p>（1）创建新.md文件</p>
+
+<pre><code class="language-hugo">    hugo new post/...md
 </code></pre>
 
-<!--more-->
+<p>在左侧文件夹内创建新的文件并后缀命名为.md，并点击右上角预览按钮同步渲染文本效果</p>
 
-<p>HTML 元素以开始标签起始、以结束标签终止
-内容是开始标签与结束标签之间的内容</p>
+<p>（2）标题
+在想要设为标题的文本前进加井号“#”，一级标题加1个“#”，二级加2个，最多为6级</p>
 
-<p>某些 HTML 元素具有空内容（empty content）
-空元素在开始标签中进行关闭（以开始标签的结束而结束）</p>
+<p>正文则直接写就好</p>
 
-<p>大多数 HTML 元素可拥有属性、可以嵌套（HTML 元素可以包含其他 HTML 元素）。
-HTML 文档由相互嵌套的 HTML 元素构成</p>
+<p>（3）换行与分段
+在MD中，回车并不能换行，只是将文字加个空格，如下左侧编辑器中回车换行，但右侧渲染出来的效果只是空了一格：</p>
 
-<p>HTML文档实例</p>
+<p>想要换行需要在上一行后面加两个空格再回车</p>
 
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+<p>如果要新起一段，则打两个回车</p>
 
-&lt;body&gt;
-&lt;p&gt;这是第一个段落。&lt;/p&gt;
-&lt;/body&gt;
+<p>（4）强调（加粗与斜体）
+斜体：在文本两端各加1个星号”*“</p>
 
-&lt;/html&gt;
+<p>加粗：在文本两端各加2个星号”*“
+<em>倾斜</em>
+<strong>加粗</strong>
+<strong><em>倾斜和加粗</em></strong>
+ <del>删除</del></p>
+
+<p><code>12</code></p>
+
+<pre><code class="language-123```">
+
+（5）列表（有序&amp;无序） 
+有序列表：输入1.加一个空格（注意有点”.“），按回车会自动补全编号
+
+如果要输入分级列表，回车并删除新生成的序列号并再次输入1.空格
+
+如果要加入新的列表则在两个列表之间新起一段，或者添加文字
+无序列表：输入星号&quot;*&quot;加空格或者加号&quot;+&quot;加空格或者减号&quot;-&quot;加空格
+
+
+
+（6）插入图片
+复制所需图片，在所需插入图片位置按下快捷键ctrl+alt+v（不是ctrl+v噢），效果如下：
+![](https://tenfei02.cfp.cn/creative/vcg/800/version23/VCG41175510742.jpg)
+或者手动把图片加入md文件所在文件夹下，输入 ![](图片文件名)
+
+
+
+（7）数学公式
+以下采用latex排版方式对数学公式进行演示，数学公式以 ”\“ 起始
+
+行内展示数学公式：用1个$$括起来    
+$sin30°          
+  
+另起一段展示数学公式：用两个$$括起来 $$sin30°=1/6
+
+ 
+
+（8）表格
+第一行是表头以”|“区分列
+
+第二行是对齐方式， &quot;-&quot;表示默认对其即左对齐，在&quot;-&quot;左侧加&quot;:&quot;为左对齐，在右侧加&quot;:&quot;为右对齐，两边都加&quot;:&quot;为剧中对齐（&quot;-&quot;的个数可随便写，按照自己的喜好对齐即可，冒号一定要是英文字符！！！）
+左对齐 | 居中 |居中 | 右对齐
+:-- | :--: |:--: | --:
+1|2|3|4
+5|6|7|8
+
+
+
+（9）链接
+复制链接ctrl+v黏贴
+
+直接黏贴则直接生成可点击的链接
+
+选中文字黏贴则生成可点击的文字按钮链接
+
+
+
+（10）代码块
+用两行&quot;```&quot;括起来,键盘左上方Tab键上方的点号，英文输入法下输入！！
+
+在第一行&quot;```&quot;后输入所用语言名字可指定语言提供高亮，如：
+
+```java
+    int a=0;
+    int b=a;
 </code></pre>
 
-<p>HTML 属性</p>
+<p>（11）分割线
+在所需添加分割线的文本下新起一行输入三个减号 &ldquo;&mdash;&rdquo;</p>
 
-<pre><code>class	为html元素定义一个或多个类名（classname）
-id	定义元素的唯一id
-style	规定元素的行内样式（inline style）
-title	描述了元素的额外信息 (作为工具条使用)
+<hr />
 
+<p>（12）引用
+&gt; 在引用的文字前加上大于号&rdquo;&gt;&rdquo;</p>
+
+<p>（13）流程图
+运用flowchart.js语法</p>
+
+<p>基本语法：tag=&gt;type: content:&gt;url</p>
+
+<p>tag        元素名字，可自定义
+type      元素类型
+url         引用的链接，点击相应元素可出发链接
+注意：冒号和名称之间需要有一个空格</p>
+
+<p>相关元素类型：</p>
+
+<p>开始（椭圆形）：start
+结束（椭圆形）：end
+结束（椭圆形）：end
+多输出操作（矩形）：parallel
+条件判断（菱形）：condition
+输入输出（平行四边形）：inputoutput
+预处理/子程序（圣旨形）：subroutine
+content就是在框框中要写的内容，注意type后的冒号与文本之间一定要有个空格。
+url是一个连接，与框框中的文本相绑定
+关键字</p>
+
+<p>yes/true：condition类型变量连接时，用于分别表示yes条件的流向
+no/false：同上，表示否定条件的流向
+left/right：表示连线出口在节点位置（默认下面是出口，如op3），可以跟condition变量一起用：cond(yes,right)
+path1/path2/path3：parallel变量的三个出口路径（默认下面是出口）
+节点状态</p>
+
+<p>  为节点设置不同的状态，可以通过不同的颜色显示，其中状态包括下面6个，含义如英文所示，</p>
+
+<p>past
+current
+future
+approved
+rejected
+invalid
+以下是示例：</p>
+
+<pre><code class="language-flow">st=&gt;start: 开始
+e=&gt;end: 结束
+tag1=&gt;operation: 任务1
+tag2=&gt;operation: 任务2
+cond1=&gt;condition: 是否进行任务2
+st-&gt;tag1(right)-&gt;cond1
+cond1(no)-&gt;tag1
+cond1(yes)-&gt;tag2
+tag2-&gt;e
 </code></pre>
 
-<p>HTML 文本格式化标签</p>
+<p>（14）目录
+在要生成目录的地方输入 [TOC] ,markdown或根据分级标题自动生成目录
+（15）md文件导出为其他文件
+点击markdown preview ehanced提供的渲染预览按钮（使用这个渲染方式下导出的文件数学公式比较可靠乱码概率较小）（鼠标移植按钮上方提示markdown preview ehanced相关或者MPE相关）
+如果只有看见一个预览按钮，那就是markdown preview ehanced隐藏了vscode自带的markdown文档预览按钮，所以只显示了一个markdown preview ehanced的预览按钮，直接用就好。
+若想恢复vscode自带的markdown文档预览按钮，则点击左下角齿轮按钮进入设置，搜索&rdquo;Hide Default VSCode Markdown Preview Buttons&rdquo;取消勾选即可，如下为恢复状态：在预览界面中右键，选择谷歌浏览器导出为PDF</p>
 
-<pre><code>&lt;b&gt;	定义粗体文本
-&lt;em&gt;	定义着重文字
-&lt;i&gt;	定义斜体字
-&lt;small&gt;	定义小号字
-&lt;strong&gt;	定义加重语气
-&lt;sub&gt;	定义下标字
-&lt;sup&gt;	定义上标字
-&lt;ins&gt;	定义插入字
-&lt;del&gt;	定义删除字
-
-</code></pre>
-
-<p>HTML &ldquo;计算机输出&rdquo; 标签</p>
-
-<pre><code>&lt;code&gt;	定义计算机代码
-&lt;kbd&gt;	定义键盘码
-&lt;samp&gt;	定义计算机代码样本
-&lt;var&gt;	定义变量
-&lt;pre&gt;	定义预格式文本
-</code></pre>
-
-<p>HTML 引文, 引用, 及标签定义</p>
-
-<pre><code>&lt;abbr&gt;	定义缩写
-&lt;address&gt;	定义地址
-&lt;bdo&gt;	定义文字方向
-&lt;blockquote&gt;	定义长的引用
-&lt;q&gt;	定义短的引用语
-&lt;cite&gt;	定义引用、引证
-&lt;dfn&gt;	定义一个定义项目
-</code></pre>
-
-<p>HTML 链接标签</p>
-
-<pre><code>&lt;a&gt;	定义一个超级链接
-</code></pre>
-
-<p>注释：</p>
-
-<pre><code>请始终将正斜杠添加到子文件夹。假如这样书写链接：href=&quot;https://dainif.github.io&quot;，就会向服务器产生两次
-HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，
-就像这样：href=&quot;https://dainif.github.io/&quot;
-</code></pre>
-
-<p>链接外部样式表文件
-        使用LINK 标记符：
-        <LINK rel=“stylesheet” type=“text/css” href=“stylesheet.css”>
-        样式表文件可以用文本编辑器编辑，也可以用FP或DW编辑，内容为样式定义。</p>
-
-<p><a href="https://www.runoob.com/tags/html-reference.html">HTML 参考手册</a></p>
 
                 
                 
@@ -511,15 +574,10 @@ HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/banksystem/" data-toggle="tooltip" data-placement="top" title="简易银行系统">&larr;
+                        <a href="/post/spring/springboot/" data-toggle="tooltip" data-placement="top" title="SpringBoot自动装配原理">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/backschool/" data-toggle="tooltip" data-placement="top" title="回校啦">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
                 

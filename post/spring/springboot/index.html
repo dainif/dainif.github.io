@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Web学习笔记" />
-    <meta property="og:title" content="Web学习笔记" />
-    <meta property="twitter:title" content="Web学习笔记" />
+    <meta name="title" content="SpringBoot自动装配原理" />
+    <meta property="og:title" content="SpringBoot自动装配原理" />
+    <meta property="twitter:title" content="SpringBoot自动装配原理" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="刘晓疆, liuxiaojiang, liuxiaojiang, , 刘晓疆的网络日志, 刘晓疆的博客, Liuxiaojiang Blog, 博客, 个人网站">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Web学习笔记-刘晓疆的博客 | LiuxiaojiangBlog</title>
+    <title>SpringBoot自动装配原理-刘晓疆的博客 | LiuxiaojiangBlog</title>
 
-    <link rel="canonical" href="/post/second/">
+    <link rel="canonical" href="/post/spring/springboot/">
 
     
     
@@ -167,7 +167,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/img/sec-blog/post-bg-coffee.jpg')
+        background-image: url('/img/')
     }
 </style>
 
@@ -179,25 +179,13 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/html" title="HTML">
-                            HTML
-                        </a>
-                        
-                        <a class="tag" href="/tags/java" title="JAVA">
-                            JAVA
-                        </a>
-                        
-                        <a class="tag" href="/tags/servlet" title="Servlet">
-                            Servlet
-                        </a>
-                        
-                        <a class="tag" href="/tags/xhtml" title="XHTML">
-                            XHTML
+                        <a class="tag" href="/tags/" title="">
+                            
                         </a>
                         
                     </div>
-                    <h1>Web学习笔记</h1>
-                    <h2 class="subheading">HTML&#43;Servlet&#43;XHTML</h2>
+                    <h1>SpringBoot自动装配原理</h1>
+                    <h2 class="subheading"></h2>
                     <span class="meta">
                         
                             Posted by 
@@ -205,9 +193,9 @@
                                      &#34;刘晓疆&#34;
                              
                             on 
-                            Tuesday, February 15, 2022
+                            Wednesday, June 28, 2023
                             
-                                <span id="/post/second/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                                <span id="/post/spring/springboot/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -365,105 +353,36 @@ $(function() {
                 post-container">
 
                 
-                <p>HTML
-关于html的一些基础知识
-</p>
+                
 
-<pre><code>&lt;!DOCTYPE html&gt; 声明为 HTML5 文档
-&lt;html&gt; 元素是 HTML 页面的根元素
-&lt;head&gt; 元素包含了文档的元（meta）数据，如 &lt;meta charset=&quot;utf-8&quot;&gt; 定义网页编码格式为 utf-8。
-&lt;title&gt; 元素描述了文档的标题
-&lt;body&gt; 元素包含了可见的页面内容
-&lt;h1&gt; 元素定义一个大标题
-&lt;p&gt; 元素定义一个段落
-&lt;a&gt; 元素定义一个链接
-&lt;img&gt; 元素定义一个图像
+<h1 id="springboot自动装配原理">SpringBoot自动装配原理</h1>
+
+<h2 id="springbootconfiguration">@SpringBootConfiguration</h2>
+
+<p>在SpringBootConfiguration类下主要有以下注解</p>
+
+<pre><code class="language-java">@org.springframework.boot.SpringBootConfiguration
+@org.springframework.boot.autoconfigure.EnableAutoConfiguration
+@org.springframework.context.annotation.ComponentScan
 </code></pre>
 
-<!--more-->
+<h3 id="springbootconfiguration-1">SpringBootConfiguration</h3>
 
-<p>HTML 元素以开始标签起始、以结束标签终止
-内容是开始标签与结束标签之间的内容</p>
+<p>进入注解可以发现
+<img src="/static/spring/springboot/SpringBootConfiguration.png" alt="" /></p>
 
-<p>某些 HTML 元素具有空内容（empty content）
-空元素在开始标签中进行关闭（以开始标签的结束而结束）</p>
+<h2 id="自动装配本质">自动装配本质</h2>
 
-<p>大多数 HTML 元素可拥有属性、可以嵌套（HTML 元素可以包含其他 HTML 元素）。
-HTML 文档由相互嵌套的 HTML 元素构成</p>
+<blockquote>
+<p>SpringBoot自动装配的本质就是通过Spring去读取META-INF/spring.factories中保存的配置类文件然后加载bean定义的过程（借助javaConfig类来获取文件）。
+如果是标了@Configuration注解，就是批量加载了里面的bean定义
+如何实现 “自动”：通过配置文件获取对应的批量配置类，然后通过配置类批量加载bean定义，只要有写好的配置文件spring.factories就实现了自动。</p>
+</blockquote>
 
-<p>HTML文档实例</p>
+<h2 id="总结">总结</h2>
 
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+<p>SpringBoot的自动装配特性可以说是Spring Boot最重要、最核心的一环，正是因为这个特性，使得我们的生产复杂性大大降低，极大地简化了开发流程。</p>
 
-&lt;body&gt;
-&lt;p&gt;这是第一个段落。&lt;/p&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre>
-
-<p>HTML 属性</p>
-
-<pre><code>class	为html元素定义一个或多个类名（classname）
-id	定义元素的唯一id
-style	规定元素的行内样式（inline style）
-title	描述了元素的额外信息 (作为工具条使用)
-
-</code></pre>
-
-<p>HTML 文本格式化标签</p>
-
-<pre><code>&lt;b&gt;	定义粗体文本
-&lt;em&gt;	定义着重文字
-&lt;i&gt;	定义斜体字
-&lt;small&gt;	定义小号字
-&lt;strong&gt;	定义加重语气
-&lt;sub&gt;	定义下标字
-&lt;sup&gt;	定义上标字
-&lt;ins&gt;	定义插入字
-&lt;del&gt;	定义删除字
-
-</code></pre>
-
-<p>HTML &ldquo;计算机输出&rdquo; 标签</p>
-
-<pre><code>&lt;code&gt;	定义计算机代码
-&lt;kbd&gt;	定义键盘码
-&lt;samp&gt;	定义计算机代码样本
-&lt;var&gt;	定义变量
-&lt;pre&gt;	定义预格式文本
-</code></pre>
-
-<p>HTML 引文, 引用, 及标签定义</p>
-
-<pre><code>&lt;abbr&gt;	定义缩写
-&lt;address&gt;	定义地址
-&lt;bdo&gt;	定义文字方向
-&lt;blockquote&gt;	定义长的引用
-&lt;q&gt;	定义短的引用语
-&lt;cite&gt;	定义引用、引证
-&lt;dfn&gt;	定义一个定义项目
-</code></pre>
-
-<p>HTML 链接标签</p>
-
-<pre><code>&lt;a&gt;	定义一个超级链接
-</code></pre>
-
-<p>注释：</p>
-
-<pre><code>请始终将正斜杠添加到子文件夹。假如这样书写链接：href=&quot;https://dainif.github.io&quot;，就会向服务器产生两次
-HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，
-就像这样：href=&quot;https://dainif.github.io/&quot;
-</code></pre>
-
-<p>链接外部样式表文件
-        使用LINK 标记符：
-        <LINK rel=“stylesheet” type=“text/css” href=“stylesheet.css”>
-        样式表文件可以用文本编辑器编辑，也可以用FP或DW编辑，内容为样式定义。</p>
-
-<p><a href="https://www.runoob.com/tags/html-reference.html">HTML 参考手册</a></p>
 
                 
                 
@@ -511,13 +430,13 @@ HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/banksystem/" data-toggle="tooltip" data-placement="top" title="简易银行系统">&larr;
+                        <a href="/post/desing_pro_1/" data-toggle="tooltip" data-placement="top" title="毕业设计">&larr;
                             Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/backschool/" data-toggle="tooltip" data-placement="top" title="回校啦">Next
+                        <a href="/post/markdown/use/" data-toggle="tooltip" data-placement="top" title="MarkDown 文档的使用">Next
                             Post &rarr;</a>
                     </li>
                     

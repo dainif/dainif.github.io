@@ -6,10 +6,28 @@
     <description>Recent content in Tech on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 May 2022 14:29:37 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jun 2023 14:27:17 +0800</lastBuildDate>
     
 	<atom:link href="https://dainif.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MarkDown 文档的使用</title>
+      <link>https://dainif.github.io/post/markdown/use/</link>
+      <pubDate>Wed, 28 Jun 2023 14:27:17 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/markdown/use/</guid>
+      <description>MarkDown文档写作 1.MarkDown简介 Markdown 是一种轻量级标记语言，一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云</description>
+    </item>
+    
+    <item>
+      <title>SpringBoot自动装配原理</title>
+      <link>https://dainif.github.io/post/spring/springboot/</link>
+      <pubDate>Wed, 28 Jun 2023 14:01:26 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/spring/springboot/</guid>
+      <description>SpringBoot自动装配原理 @SpringBootConfiguration 在SpringBootConfiguration类下主要有以下注解 @org.springframework.boot.SpringBootConfiguration @org.springframework.boot.autoconfigure.EnableAutoConfiguration @org.springframework.context.annotation.ComponentScan SpringBootConfiguration 进入注解可以发现 自动装配本质 Sp</description>
+    </item>
     
     <item>
       <title>An Example Post</title>
