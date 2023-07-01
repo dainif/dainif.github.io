@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MySQL on Xiaojiang Blog</title>
+    <title>MYSQL on Xiaojiang Blog</title>
     <link>https://dainif.github.io/tags/mysql/</link>
-    <description>Recent content in MySQL on Xiaojiang Blog</description>
+    <description>Recent content in MYSQL on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Mar 2022 15:09:54 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Mar 2023 18:27:41 +0800</lastBuildDate>
     
 	<atom:link href="https://dainif.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Java-JDBC使用教程</title>
-      <link>https://dainif.github.io/post/jdbc/</link>
-      <pubDate>Fri, 11 Mar 2022 15:09:54 +0800</pubDate>
+      <title>毕业设计</title>
+      <link>https://dainif.github.io/post/desing_pro_1/</link>
+      <pubDate>Wed, 01 Mar 2023 18:27:41 +0800</pubDate>
       
-      <guid>https://dainif.github.io/post/jdbc/</guid>
-      <description>导包 先导入Java与MySQL连接的包我的是(mysql-connector-java-5.0.8.jar)，导入后如果是放在lib文件夹下</description>
+      <guid>https://dainif.github.io/post/desing_pro_1/</guid>
+      <description>省市区三级联动 mysql 创建省表并插入省信息 ··· ···</description>
     </item>
     
-  </channel>
-</rss>https://dainif.github.io/post/a-small-program/</link>
+    <item>
+      <title>图书管理系统</title>
+      <link>https://dainif.github.io/post/a-small-program/</link>
       <pubDate>Fri, 04 Mar 2022 18:41:34 +0800</pubDate>
       
       <guid>https://dainif.github.io/post/a-small-program/</guid>
