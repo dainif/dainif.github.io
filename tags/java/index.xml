@@ -1,41 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on Xiaojiang Blog</title>
+    <title>JAVA on Xiaojiang Blog</title>
     <link>https://dainif.github.io/tags/java/</link>
-    <description>Recent content in Java on Xiaojiang Blog</description>
+    <description>Recent content in JAVA on Xiaojiang Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Mar 2023 18:27:41 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Mar 2022 18:27:41 +0800</lastBuildDate>
     
 	<atom:link href="https://dainif.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>毕业设计</title>
-      <link>https://dainif.github.io/post/desing_pro_1/</link>
-      <pubDate>Wed, 01 Mar 2023 18:27:41 +0800</pubDate>
+      <title>MYSQL数据库学习</title>
+      <link>https://dainif.github.io/post/five/</link>
+      <pubDate>Tue, 01 Mar 2022 18:27:41 +0800</pubDate>
       
-      <guid>https://dainif.github.io/post/desing_pro_1/</guid>
-      <description>省市区三级联动 mysql 创建省表并插入省信息 ··· ···</description>
+      <guid>https://dainif.github.io/post/five/</guid>
+      <description>什么是数据库？ 数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。 每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜</description>
     </item>
     
     <item>
-      <title>Java-JDBC使用教程</title>
-      <link>https://dainif.github.io/post/jdbc/</link>
-      <pubDate>Fri, 11 Mar 2022 15:09:54 +0800</pubDate>
+      <title>CSS学习</title>
+      <link>https://dainif.github.io/post/four/</link>
+      <pubDate>Mon, 28 Feb 2022 16:47:45 +0800</pubDate>
       
-      <guid>https://dainif.github.io/post/jdbc/</guid>
-      <description>导包 先导入Java与MySQL连接的包我的是(mysql-connector-java-5.0.8.jar)，导入后如果是放在lib文件夹下</description>
+      <guid>https://dainif.github.io/post/four/</guid>
+      <description>&lt;p&gt;CSS简介、CSS实例、教程。&lt;br&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>图书管理系统</title>
-      <link>https://dainif.github.io/post/a-small-program/</link>
-      <pubDate>Fri, 04 Mar 2022 18:41:34 +0800</pubDate>
+      <title>Web学习笔记</title>
+      <link>https://dainif.github.io/post/second/</link>
+      <pubDate>Tue, 15 Feb 2022 19:18:57 +0800</pubDate>
       
-      <guid>https://dainif.github.io/post/a-small-program/</guid>
-      <description>当我看到你的第一眼，就把人生里浪漫的是想了个遍。世人的喜欢只会停留在新鲜的第一面，有了爱的牵绊那就会有一生的纠缠&amp;hellip;一生只此一回</description>
+      <guid>https://dainif.github.io/post/second/</guid>
+      <description>&lt;p&gt;HTML
+关于html的一些基础知识
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>简易银行系统</title>
+      <link>https://dainif.github.io/post/banksystem/</link>
+      <pubDate>Mon, 14 Feb 2022 22:15:38 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/banksystem/</guid>
+      <description>前言 银行存储管理系统工作繁琐，包含大量数据信息数据，因此就需要一个完善的银行管理系统来实现这些数据的有效管理。该系统采用模块化程序设计方法，</description>
     </item>
     
   </channel>
