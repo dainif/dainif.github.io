@@ -21,4 +21,30 @@
     </item>
     
   </channel>
+</rss>https://dainif.github.io/post/a-small-program/</link>
+      <pubDate>Fri, 04 Mar 2022 18:41:34 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/a-small-program/</guid>
+      <description>当我看到你的第一眼，就把人生里浪漫的是想了个遍。世人的喜欢只会停留在新鲜的第一面，有了爱的牵绊那就会有一生的纠缠&amp;hellip;一生只此一回</description>
+    </item>
+    
+    <item>
+      <title>MYSQL数据库学习</title>
+      <link>https://dainif.github.io/post/five/</link>
+      <pubDate>Tue, 01 Mar 2022 18:27:41 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/five/</guid>
+      <description>什么是数据库？ 数据库（Database）是按照数据结构来组织、存储和管理数据的仓库。 每个数据库都有一个或多个不同的 API 用于创建，访问，管理，搜</description>
+    </item>
+    
+    <item>
+      <title>简易银行系统</title>
+      <link>https://dainif.github.io/post/banksystem/</link>
+      <pubDate>Mon, 14 Feb 2022 22:15:38 +0800</pubDate>
+      
+      <guid>https://dainif.github.io/post/banksystem/</guid>
+      <description>前言 银行存储管理系统工作繁琐，包含大量数据信息数据，因此就需要一个完善的银行管理系统来实现这些数据的有效管理。该系统采用模块化程序设计方法，</description>
+    </item>
+    
+  </channel>
 </rss>
